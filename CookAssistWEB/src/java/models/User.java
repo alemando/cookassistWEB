@@ -1,13 +1,8 @@
 package models;
 
 public class User {
-    
-    int xd;
-    
+    //prueba
     User(){
     }
 
-    void xd(int xd){
-        this.xd = xd;
-    }
 }
