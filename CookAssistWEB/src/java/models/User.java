@@ -1,30 +1,32 @@
 package models;
 
+import java.util.Date;
+
 public class User {
-    private String typeUser;
+    private String type_user;
     private String name;
     private String email;
-    private Calendar born;
+    private Date born_date;
     private Boolean status;
     private Rating rating[];
     private Order order[];
     private Bill bill[];
     
-    public User(String typeUser, String name, String email, Calendar born, Boolean status){
-        this.typeUser = typeUser;
+    public User(String type_user, String name, String email, Date born_date, Boolean status){
+        this.type_user = type_user;
         this.name = name;
         this.email = email;
-        this.born = born;
+        this.born_date = born_date;
         this.status = status;
     }
 
 
     public String getTypeUser(){
-        return typeUser;
+        return type_user;
     }
     
     public void setTypeUser(String typeuser) {
-        this.typeUser = typeuser;
+        this.type_user = typeuser;
         
     }
     
@@ -44,12 +46,12 @@ public class User {
         this.email = email;
     }
     
-    public Calendar getBorn(){
-        return born;
+    public Date getBornDate(){
+        return born_date;
     }
     
-    public void setBorn(Calendar born){
-        this.born = born;
+    public void setBornDate(Date born){
+        this.born_date = born;
     }
     
     public Boolean getStatus(){
