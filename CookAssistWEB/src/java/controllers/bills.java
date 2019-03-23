@@ -6,16 +6,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import models.Product;
+import models.Bill;
 
-@WebServlet(urlPatterns = {"/products"})
-public class products extends HttpServlet {
+@WebServlet(urlPatterns = {"/bills"})
+public class bills extends HttpServlet {
 
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {    
-        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("bills.jsp");
         view.forward(request, response);        
     }
 

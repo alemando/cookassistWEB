@@ -31,19 +31,19 @@
                         <a class="btn_nav btn nav-link" href="./products">Productos</a>
                     </li>
                     <li class="li_nav nav-item">
-                        <a class="btn_nav btn nav-link" href="#">Pedidos</a>
+                        <a class="btn_nav btn nav-link" href="./orders">Pedidos</a>
                     </li>
                     <li class="li_nav nav-item">
-                        <a class="btn_nav btn nav-link" href="#">Facturas</a>
+                        <a class="btn_nav btn nav-link" href="./bills">Facturas</a>
                     </li>
                     <li class="li_nav nav-item">
-                        <a class="btn_nav btn nav-link" href="#">Usuarios</a>
+                        <a class="btn_nav btn nav-link" href="./users">Usuarios</a>
                     </li>
                     <li class="li_nav nav-item">
-                        <a class="btn_nav btn nav-link" href="#">Chefs</a>
+                        <a class="btn_nav btn nav-link" href="./chefs">Chefs</a>
                     </li>
                     <li class="li_nav nav-item">
-                        <a class="btn_nav btn nav-link" href="#">Calificaciones</a>
+                        <a class="btn_nav btn nav-link" href="./ratings">Calificaciones</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
