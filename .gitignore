@@ -13,3 +13,4 @@ nb-configuration.xml
 *.war 
 *.ear 
 /CookAssistWEB/nbproject/private/
+CookAssistWEB/nbproject/project.properties
