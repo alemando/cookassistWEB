@@ -17,14 +17,14 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="http://lorempixel.com/1200/400/" class="img-responsive" alt="">
+                                <img src="http://lorempixel.com/1200/400/city/2" class="img-responsive" alt="">
                                 <div class="carousel-caption">
                                     <h3>Slide 2</h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea earum, dolorem nesciunt repellendus odit aperiam, necessitatibus commodi accusantium architecto consectetur ab, quo laudantium? Consectetur rerum autem hic assumenda velit exercitationem.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="http://lorempixel.com/1200/400/" class="img-responsive" alt="">
+                                <img src="http://lorempixel.com/1200/400/city" class="img-responsive" alt="">
                                 <div class="carousel-caption">
                                     <h3>Slide 3</h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea earum, dolorem nesciunt repellendus odit aperiam, necessitatibus commodi accusantium architecto consectetur ab, quo laudantium? Consectetur rerum autem hic assumenda velit exercitationem.</p>
