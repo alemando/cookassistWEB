@@ -1,7 +1,7 @@
 package models;
 
 public class Chef {
-    private String name; 
+    private String name = "Hola";
     private int code;
     Chef(){
     }
