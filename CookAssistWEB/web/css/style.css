@@ -1,0 +1,35 @@
+html {
+    height:100%;
+    text-decoration: none;
+}
+body{
+    min-height:100%;
+    padding-top: 60px;
+}
+.header_nav{
+    background-color: #9b9b9b;
+    height: 60px;
+}
+article{
+    background: rgb(165, 41, 41);
+    color: white;
+}
+aside{
+    background: rgb(48, 47, 44);
+    color: rgb(243, 243, 243)
+}
+.color1{
+    background: rgb(32, 51, 114);
+    color: rgb(243, 243, 243);
+}
+footer{
+    background: rgb(68, 4, 4);
+    color: white ;
+}
+.btn_nav:hover{
+    background-color: #686767;
+}
+
+.li_nav{
+    padding: 0;
+}
