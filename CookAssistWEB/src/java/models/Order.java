@@ -1,15 +1,18 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Order {
     private int code;
-    private String description;
-    private OrderDetail[] detail;
+    private String description; 
+    private  List<OrderDetail> detail = new ArrayList<OrderDetail>(){};
     private User user;
     private Chef chef;
-    private Rating[] rating;
+    private  List<Rating> rating = new ArrayList<Rating>(){};
     private Bill bill;
     
-    public Order(int code, String description, OrderDetail detail[], User user){
+    public Order(int code, String description, List<OrderDetail> detail, User user){
         this.code = code;
         this.description = description;
         this.detail = detail;
@@ -33,11 +36,11 @@ public class Order {
         this.description = description;
     }
     
-    public OrderDetail[] getOrder(){
+    public List<OrderDetail> getOrderDetail(){
         return detail;
     }
     
-    public void setOrderDetail(OrderDetail detail[]){
+    public void setOrderDetail(List<OrderDetail> detail){
         this.detail = detail;
     }
     
@@ -57,11 +60,11 @@ public class Order {
         this.chef = chef;
     }
     
-    public Rating[] getRating(){
+    public List<Rating> getRating(){
         return rating;
     }
     
-    public void setRating(Rating rating[]){
+    public void setRating(List<Rating> rating){
         this.rating = rating;
     }
     

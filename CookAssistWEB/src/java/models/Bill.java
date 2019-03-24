@@ -1,13 +1,16 @@
 package models;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Bill {
     public int code;
     public Date date;
     public User user;
-    public Order[] order;
+    private  List<Order> order = new ArrayList<Order>(){};
+
     
-    public Bill(int code, Date date, User user, Order order[]){
+    public Bill(int code, Date date, User user, List<Order> order){
         this.code = code;
         this.date = date;
         this.user = user;
@@ -38,11 +41,11 @@ public class Bill {
         this.user = user;
     }
     
-    public Order[] getOrder(){
+    public List<Order> getOrder(){
         return order;
     }
     
-    public void setOrder(Order order[]){
+    public void setOrder(List<Order> order){
         this.order = order;
     }
 }
