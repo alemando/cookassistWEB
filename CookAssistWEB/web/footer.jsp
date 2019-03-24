@@ -15,23 +15,15 @@
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Terms And conditions</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Privacy Policy</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">About Us</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Contact Us</a>
                                 </li>
@@ -45,23 +37,15 @@
                                 <li>
                                     <a href="#">Link 1</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Link 2</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Link 3</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Link 4</a>
                                 </li>
-                            </ul>
-                            <ul class="link-list">
                                 <li>
                                     <a href="#">Link 5</a>
                                 </li>
@@ -102,6 +86,5 @@
         </footer>
         <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/scroll.js"></script>
     </body>
 </html>
