@@ -8,7 +8,8 @@ public class Order {
     private Chef chef;
     private Rating rating[];
     private Bill bill;
-    Order(int code, String description, User user){
+    
+    public Order(int code, String description, User user){
         this.code = code;
         this.description = description;
         this.user = user;

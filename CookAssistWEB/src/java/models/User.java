@@ -1,19 +1,17 @@
 package models;
 import java.util.Date;
 
-import java.util.Date;
-
 public class User {
     private String type_user;
     private String name;
     private String email;
     private Date born_date;
-    private Boolean status;
+    private boolean status;
     private Rating rating[];
     private Order order[];
     private Bill bill[];
     
-    public User(String type_user, String name, String email, Date born_date, Boolean status){
+    public User(String type_user, String name, String email, Date born_date, boolean status){
         this.type_user = type_user;
         this.name = name;
         this.email = email;
@@ -55,11 +53,11 @@ public class User {
         this.born_date = born;
     }
     
-    public Boolean getStatus(){
+    public boolean getStatus(){
         return status;
     } 
     
-    public void setStatus(Boolean status){
+    public void setStatus(boolean status){
         this.status = status;
     }
 }    
