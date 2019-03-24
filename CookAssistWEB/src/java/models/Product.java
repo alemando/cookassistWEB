@@ -1,12 +1,15 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Product {
     private int code;
     private String name;
     private String description;
     private String category;
     private boolean avaliable;
-    private OrderDetail[] order_detail;
+    private  List<OrderDetail> order_detail = new ArrayList<OrderDetail>(){};
     
     public Product(int code, String name, String description, String category, boolean avaliable){
         this.code = code;
@@ -15,6 +18,7 @@ public class Product {
         this.category = category;
         this.avaliable = avaliable;
     }
+
     
     public int getCode(){
         return code;
@@ -56,12 +60,13 @@ public class Product {
         this.avaliable = avaliable; 
     }
     
-    public OrderDetail[] getOrderDetail(){
+    public List<OrderDetail> getOrder_detail() {
         return order_detail;
     }
-    
-    public void setOrderDetail(OrderDetail order_detail[]){
+
+    public void setOrder_detail(List<OrderDetail> order_detail) {
         this.order_detail = order_detail;
     }
+    
  
 }
