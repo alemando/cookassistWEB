@@ -40,4 +40,30 @@ public class Rating {
         this.description = description;
     }
     
+    public Order getOrder(){
+        return order;
+    }
+    
+    public void setOrder(Order order){
+        this.order = order;
+    }
+    
+    public User getUser(){
+        return user;
+    }
+    
+    public void setUser(User user){
+        this.user = user;
+    }
+    
+    public Chef getChef(){
+        return chef;
+    }
+    
+    public void setChef(Chef chef){
+        this.chef = chef;
+    }
+    
+    
+    
 }

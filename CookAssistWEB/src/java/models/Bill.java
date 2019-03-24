@@ -5,7 +5,7 @@ public class Bill {
     public int code;
     public Date date;
     public User user;
-    public Order order[];
+    public Order[] order;
     
     public Bill(int code, Date date, User user, Order order[]){
         this.code = code;
@@ -28,5 +28,21 @@ public class Bill {
     
     public void setDate(Date date){
         this.date = date;
+    }
+    
+    public User getUser(){
+        return user;
+    }
+    
+    public void setUser(User user){
+        this.user = user;
+    }
+    
+    public Order[] getOrder(){
+        return order;
+    }
+    
+    public void setOrder(Order order[]){
+        this.order = order;
     }
 }

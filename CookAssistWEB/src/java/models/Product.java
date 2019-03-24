@@ -6,7 +6,7 @@ public class Product {
     private String description;
     private String category;
     private boolean avaliable;
-    private OrderDetail order_detail;
+    private OrderDetail[] order_detail;
     
     public Product(int code, String name, String description, String category, boolean avaliable){
         this.code = code;
@@ -54,6 +54,14 @@ public class Product {
     
     public void setAvaliable(boolean avaliable){
         this.avaliable = avaliable; 
+    }
+    
+    public OrderDetail[] getOrderDetail(){
+        return order_detail;
+    }
+    
+    public void setOrderDetail(OrderDetail order_detail[]){
+        this.order_detail = order_detail;
     }
  
 }

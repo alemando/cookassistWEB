@@ -7,9 +7,9 @@ public class User {
     private String email;
     private Date born_date;
     private boolean status;
-    private Rating rating[];
-    private Order order[];
-    private Bill bill[];
+    private Rating[] rating;
+    private Order[] order;
+    private Bill[] bill;
     
     public User(String type_user, String name, String email, Date born_date, boolean status){
         this.type_user = type_user;
@@ -60,4 +60,30 @@ public class User {
     public void setStatus(boolean status){
         this.status = status;
     }
-}    
+    
+    public Rating[] getRating(){
+        return rating;
+    }
+    
+    public void setRating(Rating rating[]){
+        this.rating = rating;
+    }
+    
+    public Order[] getOrder(){
+        return order;
+    }
+    
+    public void setOrder(Order order[]){
+        this.order = order;
+    }
+    
+    public Bill[] getBill(){
+        return bill;
+    }
+    
+    public void setBill(Bill bill[]){
+        this.bill = bill;
+    }
+}   
+
+
