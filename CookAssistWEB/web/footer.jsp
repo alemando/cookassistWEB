@@ -1,120 +1,107 @@
-        <footer class="page-footer font-small mdb-color pt-4">
-            <div class="container text-center text-md-left">
-                    <div class="row text-center text-md-left mt-3 pb-3">
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">CookAssist</h6>
-                        <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit.</p>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div>
+                            <h4>Get in touch with us</h4>
+                            <h3>CookAssist</h3>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum dolor vel nisi nam debitis, atque id eveniet modi sapiente! Fuga ipsam a est obcaecati, nesciunt omnis doloribus deserunt adipisci?</p>
                         </div>
-                        <hr class="w-100 clearfix d-md-none">
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                        <p>
-                            <a href="#!">MDBootstrap</a>
-                        </p>
-                        <p>
-                            <a href="#!">MDWordPress</a>
-                        </p>
-                        <p>
-                            <a href="#!">BrandFlow</a>
-                        </p>
-                        <p>
-                            <a href="#!">Bootstrap Angular</a>
-                        </p>
-                        </div>
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none">
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-                        <p>
-                            <a href="#!">Your Account</a>
-                        </p>
-                        <p>
-                            <a href="#!">Become an Affiliate</a>
-                        </p>
-                        <p>
-                            <a href="#!">Shipping Rates</a>
-                        </p>
-                        <p>
-                            <a href="#!">Help</a>
-                        </p>
-                        </div>
-
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none">
-
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                        <p>
-                            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p>
-                            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-                        </div>
-                        <!-- Grid column -->
-
                     </div>
-                    <!-- Footer links -->
-
-                    <hr>
-
-                    <!-- Grid row -->
-                    <div class="row d-flex align-items-center">
-
-                        <!-- Grid column -->
-                        <div class="col-md-7 col-lg-8">
-
-                        <!--Copyright-->
-                        <p class="text-center text-md-left">© 2018 Copyright:
-                            <a href="https://mdbootstrap.com/education/bootstrap/">
-                            <strong> MDBootstrap.com</strong>
-                            </a>
-                        </p>
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-5 col-lg-4 ml-lg-0">
-
-                        <!-- Social buttons -->
-                        <div class="text-center text-md-right">
-                            <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                <i class="fab fa-google-plus-g"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                    <div class="col-sm-6 col-md-3">
+                        <div>
+                            <h4>Information</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Terms And conditions</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
-
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div>
+                            <h4>Pages</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Link 1</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Link 4</a>
+                                </li>
+                            </ul>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="#">Link 5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div>
+                            <h4>Newlestter</h4>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum dolor vel nisi nam debitis, atque id eveniet modi sapiente! Fuga ipsam a est obcaecati, nesciunt omnis doloribus deserunt adipisci?</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sub_footer" class="row">
+                    <div class=" col-md-6">
+                        <div class="copyright">
+                            <p>&copy; CookAssist - All Rigths Reserved</p>
+                            <div class="credits">
+                                Designed by Us
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social_network">
+                            <li>
+                            <a href="#" data-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a> 
+                            </li>
+                            <li>
+                            <a href="#" data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a> 
+                            </li>
+                            <li>
+                            <a href="#" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a> 
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </footer>
         <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/scroll.js"></script>
     </body>
 </html>
