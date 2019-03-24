@@ -8,7 +8,7 @@
                         <h4>Utilities</h4>
                         <ul class="link-list">
                             <li>
-                                <a href="#">Link 1</a>
+                                <a href="#">Prueba</a>
                             </li>
                             <li>
                                 <a href="#">Link 2</a>
@@ -34,5 +34,5 @@
         </div>
     </section>
 </main>
-    
+
 <%@ include file="footer.jsp" %>
