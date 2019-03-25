@@ -3,8 +3,8 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-11 col-sm-offset-1">
-                <form class="form-horizontal" role="a">
+            <div class="col-sm-12 col-sm-offset-0">
+                <form action="" class="form">
                     <fieldset>
 
                         <!-- Form Name -->
@@ -12,37 +12,37 @@
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-2 control-label" for="textinput">Line 1</label>
-                            <div class="col-sm-10">
+                            <label class="control-label col-sm-4" for="textinput">Line 1</label>
+                            <div class="col-sm-8">
                                 <input type="text" placeholder="Address Line 1" class="form-control">
                             </div>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-2 control-label" for="textinput">Line 2</label>
-                            <div class="col-sm-10">
+                            <label class="col-sm-4 control-label" for="textinput">Line 2</label>
+                            <div class="col-sm-8">
                                 <input type="text" placeholder="Address Line 2" class="form-control">
                             </div>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-2 control-label" for="textinput">City</label>
-                            <div class="col-sm-10">
+                            <label class="col-sm-4 control-label" for="textinput">City</label>
+                            <div class="col-sm-8">
                                 <input type="text" placeholder="City" class="form-control">
                             </div>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-2 control-label" for="textinput">State</label>
-                            <div class="col-sm-4">
+                            <label class="col-sm-4 control-label" for="textinput">State</label>
+                            <div class="col-sm-8">
                                 <input type="text" placeholder="State" class="form-control">
                             </div>
 
-                            <label class="col-sm-2 control-label" for="textinput">Postcode</label>
-                            <div class="col-sm-4">
+                            <label class="col-sm-4 control-label" for="textinput">Postcode</label>
+                            <div class="col-sm-8">
                                 <input type="text" placeholder="Post Code" class="form-control">
                             </div>
                         </div>
@@ -51,8 +51,8 @@
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-2 control-label" for="textinput">Country</label>
-                            <div class="col-sm-10">
+                            <label class="col-sm-4 control-label" for="textinput">Country</label>
+                            <div class="col-sm-8">
                                 <input type="text" placeholder="Country" class="form-control">
                             </div>
                         </div>
