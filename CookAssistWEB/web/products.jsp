@@ -8,7 +8,7 @@
                         <h4>Utilities</h4>
                         <ul class="link-list">
                             <li>
-                                <a href="#">Link 1</a>
+                                <a href="showproducts.jsp">Mostrar Productos</a>
                             </li>
                             <li>
                                 <a href="#">Link 2</a>
