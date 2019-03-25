@@ -8,7 +8,9 @@
                     <fieldset>
 
                         <!-- Form Name -->
-                        <legend>Agregar un producto</legend>
+                        <h2 class="text-center"><b>Agregar un producto</b><p>
+                            </p>
+                            <small>Recuerda rellenar todos los campos</small></h2>
 
                         <!-- Text input-->
                         <div class="form-group">
