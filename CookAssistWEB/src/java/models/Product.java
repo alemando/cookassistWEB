@@ -8,10 +8,16 @@ public class Product {
     private String name;
     private String description;
     private String category;
-    private boolean avaliable;
+    private String avaliable;
     private  List<OrderDetail> order_detail = new ArrayList<OrderDetail>(){};
     
-    public Product(int code, String name, String description, String category, boolean avaliable){
+        public static List<Product> products = new ArrayList<Product>(){
+        {
+            add(new Product(1,"HP Laptop","asdasd","asdawqe","True"));
+        }
+    };
+    
+    public Product(int code, String name, String description, String category, String avaliable){
         this.code = code;
         this.name = name;
         this.description = description;
@@ -52,11 +58,11 @@ public class Product {
         this.category = category;
     }
     
-    public boolean getAvaliable(){
+    public String getAvaliable(){
         return avaliable;
     }
     
-    public void setAvaliable(boolean avaliable){
+    public void setAvaliable(String avaliable){
         this.avaliable = avaliable; 
     }
     
