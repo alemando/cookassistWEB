@@ -6,10 +6,16 @@ body{
     min-height:100%;
     padding-top: 60px;
 }
+
+
 .header_nav{
-    background-color: #9b9b9b;
+    width:100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 2px #e2e2e2 ; 
     height: 60px;
+
 }
+
 article{
     background: rgb(165, 41, 41);
     color: white;
@@ -23,7 +29,7 @@ aside{
     color: rgb(243, 243, 243);
 }
 .btn_nav:hover{
-    background-color: #686767;
+    background-color: #e2e2e2;
 }
 
 .li_nav{
@@ -80,7 +86,7 @@ footer ul{
     color: white;
     margin: 10px;
     padding: 10px;
-    
+
 }
 #nav_div ul{
     list-style: none;
@@ -97,7 +103,7 @@ footer ul{
 
 
 .content{
- padding: 10px;
+    padding: 10px;
 }
 
 /*Login*/
@@ -284,5 +290,5 @@ footer ul{
     padding-top:6px;
     padding-left: 20px;
     color: #ffffff;
-    
+
 }

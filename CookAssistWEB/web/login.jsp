@@ -3,17 +3,17 @@
     <div id="cuadro-login">
         <div id="cabeza-login">Iniciar sesion</div>
         <div id ="cuerpo-login">
-            <form>
+            <form method="POST" action="./loginServlet">
                 <div class="form-group row">
                     <label for="inputEmail" class="col-sm-2 col-form-label">Correo</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="email" placeholder="Correo">
+                        <input type="email" class="form-control" name="email" placeholder="Correo">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="pass" placeholder="Password">
+                        <input type="password" class="form-control" name="pass" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -40,4 +40,5 @@
 
     </div>
 </div>
+
 <%@ include file="footer.jsp" %>

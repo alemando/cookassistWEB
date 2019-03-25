@@ -4,21 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
+    
+    private static List<User> all_users = new ArrayList<>();
+    
     private String type_user;
     private String name;
     private String email;
-    private Date born_date;
+    private String password;
+    private String born_date;
     private boolean status;
     private  List<Rating> rating = new ArrayList<Rating>(){};
     private  List<Order> order = new ArrayList<Order>(){};
     private  List<Bill> bill = new ArrayList<Bill>(){};
     
-    public User(String type_user, String name, String email, Date born_date, boolean status){
+    public User(String type_user, String name, String email,String pass, String born_date, boolean status){
         this.type_user = type_user;
         this.name = name;
         this.email = email;
         this.born_date = born_date;
         this.status = status;
+        this.password = pass;
+        
+        User.all_users.add(this);
+        
     }
 
 
@@ -47,11 +55,19 @@ public class User {
         this.email = email;
     }
     
-    public Date getBornDate(){
+    public String getPassword() {
+        return password;
+    }
+    
+    public void setPassword(String password){
+        this.password = password;
+    }
+    
+    public String getBornDate(){
         return born_date;
     }
     
-    public void setBornDate(Date born){
+    public void setBornDate(String born){
         this.born_date = born;
     }
     
@@ -85,6 +101,14 @@ public class User {
     
     public void setBill(List<Bill> bill){
         this.bill = bill;
+    }
+    
+    public static boolean existUser(String em,String pass){
+        for(User us: User.all_users){
+            if(us.getPassword()==pass && us.getEmail()==em){
+                return true;
+            }
+        }return false;
     }
 }   
 
