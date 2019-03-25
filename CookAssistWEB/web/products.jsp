@@ -11,7 +11,7 @@
                                 <a href="showproducts">Mostrar Productos</a>
                             </li>
                             <li>
-                                <a href="#">Link 2</a>
+                                <a href="createproduct">Añadir Producto</a>
                             </li>
                             <li>
                                 <a href="#">Link 3</a>
