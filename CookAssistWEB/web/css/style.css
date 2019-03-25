@@ -102,3 +102,53 @@ footer ul{
 .content{
  padding: 10px;
 }
+
+#cuadro-login{
+    width:550px;
+    border-bottom: 1px solid #b9bfc9;
+    border-top: 1px solid #b9bfc9;
+    border-left: 1px solid #b9bfc9;
+    border-right:  1px solid #b9bfc9;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: #ffffff;    
+}
+#cabeza-login{
+    width:548px;
+    background: #b9bfc9;
+    height: 35px;
+    border-radius: 10px 10px 0px 0px;
+    padding-top:6px;
+    padding-left: 20px;
+    color: #ffffff;
+}
+#cuerpo-login{
+    height: 170;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:20px;
+    border-radius: 0px 0px 10px 10px;
+}
+#cuadro-enlaces-registro{
+    width:550px;
+    border-bottom: 1px solid #b9bfc9;
+    border-top: 1px solid #b9bfc9;
+    border-left: 1px solid #b9bfc9;
+    border-right:  1px solid #b9bfc9;
+    margin: auto;
+    margin-top: 45px; 
+    border-radius: 10px;
+    background: #ffffff;
+    margin-bottom: 40px;
+}
+#enlaces-registro{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#cuadro-login-total{
+    margin-top: 80px;
+    margin-bottom: 190px;
+}
