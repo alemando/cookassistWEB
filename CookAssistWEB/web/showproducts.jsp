@@ -1,11 +1,13 @@
-<%@ include file="header.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css"></link>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<%@ include file="header.jsp" %>
         <h2>Lista de Productos</h2>
-            <div class="container">
+            <div class="container ">
                     <div class="row">
                             <div class="span5">
-                        <table class="table table-striped table-condensed">
+                        <table class="table table-striped table-condensed table-responsive">
                               <thead>
                               <tr>
                                   <th>Username</th>
