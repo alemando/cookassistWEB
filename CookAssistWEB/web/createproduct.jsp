@@ -1,13 +1,76 @@
 <%@ include file="header.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-11 col-sm-offset-1">
+                <form class="form-horizontal" role="a">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Agregar un producto</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="textinput">Line 1</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="Address Line 1" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="textinput">Line 2</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="Address Line 2" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="textinput">City</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="City" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="textinput">State</label>
+                            <div class="col-sm-4">
+                                <input type="text" placeholder="State" class="form-control">
+                            </div>
+
+                            <label class="col-sm-2 control-label" for="textinput">Postcode</label>
+                            <div class="col-sm-4">
+                                <input type="text" placeholder="Post Code" class="form-control">
+                            </div>
+                        </div>
+
+
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="textinput">Country</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="Country" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn-default">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!-- /.row -->
+        </div>
+    </div> 
+</div>
+
+
 <%@ include file="footer.jsp" %>
