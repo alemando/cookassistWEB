@@ -1,7 +1,7 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <%@ page session="true" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang='es'>
 <head>
@@ -48,7 +48,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="li_nav nav-item">
-                        <a class="btn_nav btn nav-link" href="#"><i class="fas fa-user"></i> Usuario</a>
+                        <a class="btn_nav btn nav-link" href="login.jsp"><i class="fas fa-user"></i> Usuario</a>
                     </li>
                 </ul>
             </div>
