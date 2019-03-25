@@ -1,38 +1,37 @@
 <%@ include file="header.jsp" %>
-<main>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="sidebar" class="col-md-2">
-                    <div id="nav_div">
-                        <h4>Utilities</h4>
-                        <ul class="link-list">
-                            <li>
-                                <a href="#">Prueba</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 5</a>
-                            </li>
-                        </ul>
+    <div id="cuadro-user">
+        <div id="cabeza-user">Pedido</div>
+        <div id="cuerpo-user">
+            <form>
+                <div class="form-group row ">
+                    <label for="user" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Usuario</label>
+                    <div class="col-xs-12 col-sm-6 col-md-10">
+                    </div>
+                </div>    
+                <div class="form-group row ">
+                    <label for="productos_disp" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Productos Disponibles</label>
+                    <div class="col-xs-12 col-sm-6 col-md-10">
+                        <select name="OS">
+                            <option selected value="0"> Elige una opción </option>
+                            <option value="1">Hamburguesa</option> 
+                            <option value="2">Fideos</option> 
+                            <option value="3">Arroz</option>
+                        </select>    
                     </div>
                 </div>
-                <div class="col-md-10">
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quaerat quisquam quae voluptas repellat vitae veritatis temporibus nisi magnam eum molestias, distinctio laboriosam debitis officiis nam totam nesciunt quis?
+                <div class="form-group row ">
+                    <label for="description" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Descripcion</label>
+                    <div class="col-xs-12 col-sm-6 col-md-10">
+                        <input type="text" class="form-control" id="pass" placeholder="Descripcion">
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-</main>
+                <div class="form-group row ">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>    
+    </div>    
 
 <%@ include file="footer.jsp" %>
