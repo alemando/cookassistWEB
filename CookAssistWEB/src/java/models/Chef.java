@@ -6,8 +6,8 @@ public class Chef extends User {
     private Order order;
     private Rating rating;
     
-    Chef(String type_user, String name, String email, Date born_date, boolean status){
-        super(type_user, name, email, born_date, status);
+    Chef(String type_user, String name, String email,String pass, String born_date, boolean status){
+        super(type_user, name, email,pass, born_date, status);
     }
     
 }

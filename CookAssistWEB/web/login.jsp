@@ -35,7 +35,7 @@
     <div id = "cuadro-registro">
         <div id ="cabeza-login">¿Problemas con el registro?</div>
         <div id="enlaces-registro">
-            <a href="login.jsp">Contactenos aquí</a>
+            <a href="./index">Contactenos aquí</a>
         </div>
 
     </div>

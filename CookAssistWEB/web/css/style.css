@@ -10,7 +10,13 @@ body{
 
 .header_nav{
     width:100%;
-    background-color: #ffffff;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgb(211,239,237),
+            rgb(224,243,242),
+            #ffffff
+        );
     box-shadow: 0px 0px 0px 2px #e2e2e2 ; 
     height: 60px;
 
@@ -29,15 +35,50 @@ aside{
     color: rgb(243, 243, 243);
 }
 .btn_nav:hover{
-    background-color: #e2e2e2;
+    background: #60c5be;
+}
+
+.carousel-item{
+
+    text-align:center;
+
+}
+.img-responsive{
+    width: 90%;
+    text-align:center;
+    transition: width .15s ease-in-out;
+
+}
+.img-responsive:hover{
+    width: 100%;
+    transition: width .15s ease-in-out;
+    text-align:center;
+
 }
 
 .li_nav{
     padding: 0;
 }
 
+.gradient_in{
+    background-image:
+
+        linear-gradient(
+        to top, 
+        rgb(163,222,218), 
+        #ffffff
+        );
+}
+
 footer{
-    background: rgb(94, 94, 94);
+    background-image: 
+        linear-gradient(
+        to bottom,
+        rgb(163,222,218),
+        rgb(96,197,190),
+        rgb(61,165,157),
+        rgb(51,140,134)
+        );
     color: white ;
     padding: 50px 0 0 0;
 }

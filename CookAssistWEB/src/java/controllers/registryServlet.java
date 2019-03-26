@@ -57,7 +57,6 @@ public class registryServlet extends HttpServlet{
         
         users.add(usuario);
         
-        
         session.setAttribute("Users", users);
         request.setAttribute("users", users);        
         RequestDispatcher view = request.getRequestDispatcher("registry.jsp");

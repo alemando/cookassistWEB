@@ -1,9 +1,6 @@
 package controllers;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.http.HttpSession;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,11 +19,6 @@ public class loginServlet extends HttpServlet {
             throws ServletException, IOException {
         
         HttpSession session = request.getSession(); 
-
-        if(null == session.getAttribute("email") || null == session.getAttribute("pass")){
-            request.setAttribute("error", 2);
-        }
-    
         RequestDispatcher view = request.getRequestDispatcher("login.jsp");
         view.forward(request, response);
         
