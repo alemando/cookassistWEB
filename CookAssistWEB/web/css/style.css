@@ -3,6 +3,14 @@ html {
     text-decoration: none;
 }
 body{
+    background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(211,239,237,0.5),
+      rgba(211,239,237,0.5) 10px,
+      white 10px,
+      white 20px /* determines size */
+    );
     min-height:100%;
     padding-top: 60px;
 }
@@ -158,10 +166,10 @@ footer ul{
     }
     #cuadro-login{
 
-        border-bottom: 1px solid #b9bfc9;
-        border-top: 1px solid #b9bfc9;
-        border-left: 1px solid #b9bfc9;
-        border-right:  1px solid #b9bfc9;
+        border-bottom: 1px solid rgb(51,140,134);
+        border-top: 1px solid rgb(51,140,134);
+        border-left: 1px solid rgb(51,140,134);
+        border-right:  1px solid rgb(51,140,134);
 
         margin-top: 80px;
         margin-bottom: 40px;
@@ -172,7 +180,7 @@ footer ul{
         margin-right: 30px;
     }
     #cabeza-login{
-        background: #b9bfc9;
+        background: rgb(51,140,134);
         border-radius: 10px 10px 0px 0px;
         padding-top:6px;
         padding-left: 20px;
@@ -188,10 +196,10 @@ footer ul{
     }
     #cuadro-registro{
         width:auto;
-        border-bottom: 1px solid #b9bfc9;
-        border-top: 1px solid #b9bfc9;
-        border-left: 1px solid #b9bfc9;
-        border-right:  1px solid #b9bfc9;
+        border-bottom: 1px solid rgb(51,140,134);
+        border-top: 1px solid rgb(51,140,134);
+        border-left: 1px solid rgb(51,140,134);
+        border-right:  1px solid rgb(51,140,134);
 
         margin-left: 60px;
         margin-right: 60px;
@@ -219,10 +227,10 @@ footer ul{
     }
     #cuadro-login{
 
-        border-bottom: 1px solid #b9bfc9;
-        border-top: 1px solid #b9bfc9;
-        border-left: 1px solid #b9bfc9;
-        border-right:  1px solid #b9bfc9;
+        border-bottom: 1px solid rgb(51,140,134);
+        border-top: 1px solid rgb(51,140,134);
+        border-left: 1px solid rgb(51,140,134);
+        border-right:  1px solid rgb(51,140,134);
 
         margin-top: 80px;
         margin-bottom: 40px;
@@ -231,7 +239,7 @@ footer ul{
     }
     #cabeza-login{
         width:548px;
-        background: #b9bfc9;
+        background: rgb(51,140,134);
         height: 35px;
         border-radius: 10px 10px 0px 0px;
         padding-top:6px;
@@ -247,10 +255,10 @@ footer ul{
     }
     #cuadro-registro{
         width:550px;
-        border-bottom: 1px solid #b9bfc9;
-        border-top: 1px solid #b9bfc9;
-        border-left: 1px solid #b9bfc9;
-        border-right:  1px solid #b9bfc9;
+        border-bottom: 1px solid rgb(51,140,134);
+        border-top: 1px solid rgb(51,140,134);
+        border-left: 1px solid rgb(51,140,134);
+        border-right:  1px solid rgb(51,140,134);
         margin: auto;
         margin-top: 45px; 
         border-radius: 10px;
@@ -274,10 +282,10 @@ footer ul{
     margin-top: 10px;
     margin-bottom: 190px;
     margin: 80px;
-    border-bottom: 1px solid #b9bfc9;
-    border-top: 1px solid #b9bfc9;
-    border-left: 1px solid #b9bfc9;
-    border-right:  1px solid #b9bfc9;
+    border-bottom: 1px solid rgb(51,140,134);
+    border-top: 1px solid rgb(51,140,134);
+    border-left: 1px solid rgb(51,140,134);
+    border-right:  1px solid rgb(51,140,134);
 
     margin-top: 80px;
     margin-bottom: 190px;
@@ -287,7 +295,7 @@ footer ul{
 
 #cabeza-registro{
     width:auto;
-    background: #b9bfc9;
+    background: rgb(51,140,134);
     height: 35px;
     border-radius: 10px 10px 0px 0px;
     padding-top:6px;
@@ -308,15 +316,15 @@ footer ul{
 #cuadro-user{
     margin-left: 100px;
     margin-right: 100px;
-    border-bottom: 1px solid #b9bfc9;
-    border-top: 1px solid #b9bfc9;
-    border-left: 1px solid #b9bfc9;
-    border-right:  1px solid #b9bfc9;
+    border-bottom: 1px solid rgb(51,140,134);
+    border-top: 1px solid rgb(51,140,134);
+    border-left: 1px solid rgb(51,140,134);
+    border-right:  1px solid rgb(51,140,134);
     width: auto;
 }
 
 #cuerpo-user{
-    height: 170;
+    height: 170px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top:20px;
