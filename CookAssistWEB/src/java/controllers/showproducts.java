@@ -44,7 +44,7 @@ public class showproducts extends HttpServlet {
         String description = request.getParameter("description"); 
         String category = request.getParameter("category");
         String avaliable= request.getParameter("avaliable");
-        Product p = new Product(code,name,description,category,avaliable);
+        Product p = new Product(name,description,category,avaliable);
         products.add(p);
         
         session.setAttribute("Products", products);

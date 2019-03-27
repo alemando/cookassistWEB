@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
-    private int code;
+    private static int auto_code=1;
+    private String code;
     private String name;
     private String description;
     private String category;
@@ -18,8 +19,8 @@ public class Product {
             } 
     };
     
-    public Product(int code, String name, String description, String category, String avaliable){
-        this.code = code;
+    public Product(String name, String description, String category, String avaliable){
+        this.code = String.format("%06d",Product.auto_code++);
         this.name = name;
         this.description = description;
         this.category = category;
@@ -28,16 +29,16 @@ public class Product {
     }
 
     
-    public int getCode(){
-        return code;
+    public String getCode(){
+        return this.code;
     }
     
-    public void setCode(int code){
+    public void setCode(String code){
         this.code = code;
     }
     
     public String getName(){
-        return name;
+        return this.name;
     }
     
     public void setName(String name){
@@ -45,7 +46,7 @@ public class Product {
     }
     
     public String getDescription(){
-        return description;
+        return this.description;
     }
     
     public void setDescription(String description){
@@ -53,7 +54,7 @@ public class Product {
     }
     
     public String getCategory(){
-        return category;
+        return this.category;
     }
     
     public void setCategory(String category){
@@ -61,7 +62,7 @@ public class Product {
     }
     
     public String getAvaliable(){
-        return avaliable;
+        return this.avaliable;
     }
     
     public void setAvaliable(String avaliable){

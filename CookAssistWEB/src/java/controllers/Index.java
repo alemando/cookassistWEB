@@ -16,19 +16,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import models.Product;
 
-/**
- *
- * @author -Daniel
- */
+
 @WebServlet(urlPatterns = {"/Index"})
 public class Index extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {  
-            Product p = new Product(1,"HP Laptop","asdasd","asdawqe","True");
+            Product p1 = new Product("HP Laptop","asdasd","asdawqe","True");
+            Product p2 = new Product("HP Laptooop","asdasd","asdawqe","True");
             HttpSession session = request.getSession(); 
-            session.setAttribute("productos",p);
+            session.setAttribute("products",p1);
+            request.setAttribute("products",p1);
             RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
             

@@ -9,14 +9,14 @@
     <h2 class="text-center"><b>Lista de Productos</b><p>
         </p>
         <small>Aquí podrás ver la lista de todos nuestros productos</small></h2>
-        <c:if test="${not empty products}"> 
+        <c:if test="${not empty products}">
         <table class="table table-striped table-condensed ">
             <thead>
                 <tr>  
-                    <th>Username</th>
-                    <th>Date registered</th>
-                    <th>Role</th>
-                    <th>Status</th>
+                    <th>Código</th>
+                    <th>Nombre del Producto</th>
+                    <th>Descripción del Producto</th>
+                    <th>Categoría</th>
                     <th>Activo</th>
                 </tr>
             </thead>
