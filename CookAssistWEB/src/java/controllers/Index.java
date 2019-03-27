@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import models.Product;
 
 /**
  *
@@ -24,9 +25,13 @@ public class Index extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {        
-        RequestDispatcher view = request.getRequestDispatcher("index.jsp");
-        view.forward(request, response);        
+            throws ServletException, IOException {  
+            Product p = new Product(1,"HP Laptop","asdasd","asdawqe","True");
+            HttpSession session = request.getSession(); 
+            session.setAttribute("productos",p);
+            RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+            view.forward(request, response);
+            
     }
     
     @Override

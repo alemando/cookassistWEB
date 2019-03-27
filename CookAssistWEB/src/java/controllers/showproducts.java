@@ -22,6 +22,8 @@ public class showproducts extends HttpServlet {
 @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        HttpSession session = request.getSession();  
+        session.setAttribute("products", Product.products);
         request.setAttribute("products", Product.products);
         RequestDispatcher view = request.getRequestDispatcher("showproducts.jsp");
         view.forward(request, response);        
@@ -33,6 +35,7 @@ public class showproducts extends HttpServlet {
         
         HttpSession session = request.getSession();        
         List<Product> products = new ArrayList<>();
+        
         if(null != session.getAttribute("Products")){
             products=(ArrayList<Product>) session.getAttribute("Products");
         }

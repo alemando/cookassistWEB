@@ -12,9 +12,10 @@ public class Product {
     private  List<OrderDetail> order_detail = new ArrayList<OrderDetail>(){};
     
         public static List<Product> products = new ArrayList<Product>(){
-        {
-            add(new Product(1,"HP Laptop","asdasd","asdawqe","True"));
-        }
+            {
+        //add(new Product(1,"HP Laptop","asdasd","asdawqe","True"));
+        //add(new Product(2,"HP Laptop","asddssss","asdawqe","True"));
+            } 
     };
     
     public Product(int code, String name, String description, String category, String avaliable){
@@ -23,6 +24,7 @@ public class Product {
         this.description = description;
         this.category = category;
         this.avaliable = avaliable;
+        Product.products.add(this);
     }
 
     
