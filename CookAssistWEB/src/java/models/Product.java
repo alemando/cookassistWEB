@@ -14,8 +14,8 @@ public class Product {
     
         public static List<Product> products = new ArrayList<Product>(){
             {
-        //add(new Product(1,"HP Laptop","asdasd","asdawqe","True"));
-        //add(new Product(2,"HP Laptop","asddssss","asdawqe","True"));
+        //add(new Product("HP Laptop","asdasd","asdawqe","True"));
+        //add(new Product("HP Laptop","asddssss","asdawqe","True"));
             } 
     };
     

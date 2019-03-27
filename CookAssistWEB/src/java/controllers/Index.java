@@ -24,7 +24,7 @@ public class Index extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {  
             Product p1 = new Product("HP Laptop","asdasd","asdawqe","True");
-            Product p2 = new Product("HP Laptooop","asdasd","asdawqe","True");
+            Product p2 = new Product("HP Lapt00op","asdasd","asdawqe","True");
             HttpSession session = request.getSession(); 
             session.setAttribute("products",p1);
             request.setAttribute("products",p1);
