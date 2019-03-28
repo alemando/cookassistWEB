@@ -18,13 +18,7 @@ body{
 
 .header_nav{
     width:100%;
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgb(211,239,237),
-            rgb(224,243,242),
-            #ffffff
-        );
+    background: #ffffff;
     box-shadow: 0px 0px 0px 2px #e2e2e2 ; 
     height: 60px;
 
@@ -51,15 +45,13 @@ aside{
     text-align:center;
 
 }
-.img-responsive{
-    width: 90%;
-    text-align:center;
-    transition: width .15s ease-in-out;
-
+.slider_container{
+    margin-bottom: 200px;
 }
-.img-responsive:hover{
+
+.img-responsive{
     width: 100%;
-    transition: width .15s ease-in-out;
+    height: 100%;
     text-align:center;
 
 }

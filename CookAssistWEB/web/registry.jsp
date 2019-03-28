@@ -2,11 +2,11 @@
 <div id="total-registro">
     <div id="cabeza-registro">Registro</div>
     <div id="cuerpo-registro">
-        <form method="POST" action="./registryServlet">
+        <form method="POST" action="./registry">
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputName">Nombres</label>
-                    <input type="text" class="form-control" name="first-name" placeholder="Nombres">
+                    <label for="inputName">Nombre(s)</label>
+                    <input type="text" class="form-control" name="first-name" placeholder="Nombre(s)">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputLastName">Apellidos</label>
@@ -17,8 +17,8 @@
                     <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <label for="inputPassword">Contraseña</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Contraseña">
                 </div>
             </div>
             <div>
@@ -35,25 +35,20 @@
 
         </form>
 
-
     </div>
 
+    <c:if test = "${succes_registry eq 1}">
+        <div class="alert alert-success text-center" role="alert">
+            Registro Completado Correctamente
+        </div>
+    </c:if>
+    <c:if test = "${succes_registry eq 0}">
+        <div class="alert alert-danger text-center" role="alert">
+            Campos Incompletos
+        </div>
+    </c:if>
+    
 </div>
-<c:if test="${not empty users}">
-    <table class="tg">
-        <tr>
-            <th width="80">Nombre</th>
-            <th width="120">Correo</th>
-            <th width="120">Pass</th>
-        </tr>
-        <c:forEach items="${users}" var="pro">
-            <tr>
-                <td>${pro.getName()}</td>
-                <td>${pro.getEmail()}</td>
-                <td>${pro.getPassword()}</td>
-            </tr>
-        </c:forEach>
-    </table>
-</c:if>
+
+
 <%@ include file="footer.jsp" %>
-<%--xd--%>

@@ -3,16 +3,19 @@
     <div id="cuadro-login">
         <div id="cabeza-login">Iniciar sesion</div>
         <div id ="cuerpo-login">
-            <form method="POST" action="./loginServlet">
+            <form method="POST" action="./login">
                 <div class="form-group row">
                     <label for="inputEmail" class="col-sm-2 col-form-label">Correo</label>
+                    
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                        
+                        <input type="email" class="form-control" name="email" placeholder="Correo">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
                     <div class="col-sm-10">
+                        <i class="glyphicon glyphicon-lock"></i>
                         <input type="password" class="form-control" name="pass" placeholder="Password">
                     </div>
                 </div>
@@ -39,14 +42,14 @@
     </c:if>
     <div id = "cuadro-registro">
         <div id ="cabeza-login">¿No registrado?</div>
-        <div id="enlaces-registro">
-            <a href="./registryServlet">Registrese aquí</a>
+        <div id="enlaces-registro" >
+            <a href="./registry">Registrese aquí</a>
         </div>
 
     </div>
     <div id = "cuadro-registro">
         <div id ="cabeza-login">¿Problemas con el registro?</div>
-        <div id="enlaces-registro">
+        <div id="enlaces-registro" >
             <a href="./Index">Contactenos aquí</a>
         </div>
 

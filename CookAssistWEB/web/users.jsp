@@ -33,6 +33,25 @@
             </div>
         </div>
     </section>
+    <c:if test="${not empty Users}">
+        <table class="tg">
+            <tr>
+                <th width="80">Nombre</th>
+                <th width="120">Correo</th>
+                <th width="120">Pass</th>
+                <th width="120">Fecha</th>
+
+            </tr>
+            <c:forEach items="${Users}" var="pro">
+                <tr>
+                    <td>${pro.getName()}</td>
+                    <td>${pro.getEmail()}</td>
+                    <td>${pro.getPassword()}</td>
+                    <td>${pro.getBornDate()}</td>
+                </tr>
+            </c:forEach>
+        </table>
+    </c:if>
 </main>
-    
+
 <%@ include file="footer.jsp" %>

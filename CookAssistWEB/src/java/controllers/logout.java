@@ -1,7 +1,6 @@
 package controllers;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.http.HttpSession;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,15 +10,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import models.User;
 
-@WebServlet(urlPatterns = {"/login"})
-public class loginServlet extends HttpServlet {
+@WebServlet(urlPatterns = {"/logout"})
+public class logout extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
-        RequestDispatcher view = request.getRequestDispatcher("login.jsp");
+
+        if (((boolean) session.getAttribute("loged")) && session.getAttribute("session_user") != null) {
+            session.setAttribute("loged", false);
+            session.setAttribute("session_user", null);
+        }
+        else{
+            
+        }
+        RequestDispatcher view = request.getRequestDispatcher("./Index");
         view.forward(request, response);
 
     }
@@ -29,22 +36,8 @@ public class loginServlet extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
-        //PrintWriter out = response.getWriter();
 
-        String email = request.getParameter("email");
-        String pass = request.getParameter("pass");
-
-
-        if (User.existUser(email, pass)) {
-            session.setAttribute("loged", true);
-            session.setAttribute("session_user", User.getUser(email, pass));
-            
-        } else {
-            request.setAttribute("error", 2); //No existe
-        }
-        
-
-        RequestDispatcher view = request.getRequestDispatcher("login.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("./Index");
         view.forward(request, response);
 
     }

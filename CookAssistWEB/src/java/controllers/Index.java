@@ -29,7 +29,7 @@ public class Index extends HttpServlet {
             HttpSession session = request.getSession(); 
             session.setAttribute("products",p1);
             request.setAttribute("products",p1);
-            RequestDispatcher view = request.getRequestDispatcher("/");
+            RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
             
     }

@@ -23,28 +23,41 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="li_nav nav-item active">
-                            <a class="btn_nav btn nav-link" href="./">Inicio</a>
-                        </li>
-                        <li class="li_nav nav-item">
-                            <a class="btn_nav btn nav-link" href="./products">Productos</a>
-                        </li>
-                        <li class="li_nav nav-item">
-                            <a class="btn_nav btn nav-link" href="./orders">Pedidos</a>
-                        </li>
-                        <li class="li_nav nav-item">
-                            <a class="btn_nav btn nav-link" href="./bills">Facturas</a>
-                        </li>
-                        <li class="li_nav nav-item">
-                            <a class="btn_nav btn nav-link" href="./users">Usuarios</a>
-                        </li>
-                        <li class="li_nav nav-item">
-                            <a class="btn_nav btn nav-link" href="./chefs">Chefs</a>
-                        </li>
-                        <li class="li_nav nav-item">
-                            <a class="btn_nav btn nav-link" href="./ratings">Calificaciones</a>
-                        </li>
+                    <ul class="navbar-nav mr-auto ">
+                        <c:choose>
+                            <c:when test="${not loged}">
+                                <li class="li_nav nav-item active">
+                                    <a class="btn_nav btn nav-link" href="./Index"><i class="fas fa-home"></i> Inicio</a>
+                                </li>
+                            </c:when>
+                            <c:otherwise>
+                                <c:if test="${session_user.getStatus()}">
+                                    <li class="li_nav nav-item">
+                                        <a class="btn_nav btn nav-link" href="./users"><i class="fas fa-users-cog"></i> Usuarios</a>
+                                    </li>
+                                </c:if>
+                                <li class="li_nav nav-item active">
+                                    <a class="btn_nav btn nav-link" href="./Index"><i class="fas fa-home"></i> Inicio</a>
+                                </li>
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
+                                </li>
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-utensils"></i> Pedidos</a>
+                                </li>
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./bills"><i class="fas fa-receipt"></i> Facturas</a>
+                                </li>
+
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./chefs"><i class="fas fa-user-check"></i> Chefs</a>
+                                </li>
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./ratings"><i class="fas fa-star"></i> Calificaciones</a>
+                                </li>
+                            </c:otherwise>
+                        </c:choose>
+
                     </ul>
                     <c:choose>
                         <c:when test="${not loged}">
@@ -56,8 +69,8 @@
                                             Iniciar Sesión
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="./loginServlet">Iniciar Sesión</a>
-                                            <a class="dropdown-item" href="./registryServlet">Registrarse</a>
+                                            <a class="dropdown-item" href="./login">Iniciar Sesión</a>
+                                            <a class="dropdown-item" href="./registry">Registrarse</a>
                                             <a class="dropdown-item" href="./Index">Ir al Inicio</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Contactenos</a>
@@ -79,7 +92,7 @@
                                             <a class="dropdown-item" href="#">Ver Pedidos</a>
                                             <a class="dropdown-item" href="#">Otra cosa</a>
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                                            <a class="dropdown-item" href="./logout">Cerrar Sesión</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Contactenos</a>
                                         </div>

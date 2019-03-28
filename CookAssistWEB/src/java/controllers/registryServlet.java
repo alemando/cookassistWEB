@@ -13,56 +13,53 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import models.User;
 
-@WebServlet(urlPatterns = {"/registryServlet"})
-public class registryServlet extends HttpServlet{
-    
+@WebServlet(urlPatterns = {"/registry"})
+public class registryServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        HttpSession session = request.getSession(); 
-        List<User> users = new ArrayList<User>();   
-        
-        if(null != session.getAttribute("email") && null != session.getAttribute("pass") && null != session.getAttribute("first-name") 
-                && null != session.getAttribute("last-name")){
-            users=(ArrayList<User>) session.getAttribute("users");
-        }
-        
-        request.setAttribute("users", users);        
+
+        HttpSession session = request.getSession();
+        List<User> users = new ArrayList<User>();
+
+        request.setAttribute("users", users);
         RequestDispatcher view = request.getRequestDispatcher("registry.jsp");
         view.forward(request, response);
-        
-        
+
     }
-    
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        HttpSession session = request.getSession(); 
-        ArrayList<User> users = User.all_users;   
-        /*
-        if(null != session.getAttribute("email") && null != session.getAttribute("pass") && null != session.getAttribute("first-name") 
-                && null != session.getAttribute("last-name")){
-            users=(ArrayList<User>) session.getAttribute("users");
-        }*/
-        
-        
+
+        HttpSession session = request.getSession();
+        ArrayList<User> users = User.all_users;
+
         String first_name = request.getParameter("first-name");
         String last_name = request.getParameter("last-name");
         String email = request.getParameter("email");
-        String pass = request.getParameter("password");
+        String pass = request.getParameter("pass");
         String date = request.getParameter("birthday");
-        User usuario = new User("normal",first_name,last_name,email,pass,date,false);
-        
-        User.all_users.add(usuario);
-        
+
+        if (first_name.equals("") || last_name.equals("") | email.equals("") || pass.equals("") || date.equals("")){
+
+            request.setAttribute("succes_registry", 0);
+
+        }else {
+
+            request.setAttribute("succes_registry", 1);
+
+            User usuario = new User("normal", first_name, last_name, email, pass, date, false);
+
+            User.all_users.add(usuario);
+
+        }
+
         session.setAttribute("Users", users);
-        request.setAttribute("users", users);        
+        request.setAttribute("users", users);
         RequestDispatcher view = request.getRequestDispatcher("registry.jsp");
         view.forward(request, response);
-        
 
-        
     }
 }
