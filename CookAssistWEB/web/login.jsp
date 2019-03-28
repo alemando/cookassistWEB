@@ -7,7 +7,7 @@
                 <div class="form-group row">
                     <label for="inputEmail" class="col-sm-2 col-form-label">Correo</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" name="email" placeholder="Correo">
+                        <input type="text" class="form-control" name="email" placeholder="Correo">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -18,17 +18,29 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Acceder</button>
+                        <button type="submit" class="btn btn-info">Acceder</button>
                     </div>
                 </div>
             </form>
         </div>
 
+
+
     </div>
+    <c:if test = "${error eq 2}">
+        <div class="alert alert-danger" role="alert">
+            Datos Incorrectos
+        </div>
+    </c:if>
+    <c:if test = "${loged}">
+        <script type="text/javascript">
+            window.location = "./Index";
+        </script>
+    </c:if>
     <div id = "cuadro-registro">
         <div id ="cabeza-login">¿No registrado?</div>
         <div id="enlaces-registro">
-            <a href="registry.jsp">Registrese aquí</a>
+            <a href="./registryServlet">Registrese aquí</a>
         </div>
 
     </div>
@@ -42,3 +54,4 @@
 </div>
 
 <%@ include file="footer.jsp" %>
+<%--xd--%>

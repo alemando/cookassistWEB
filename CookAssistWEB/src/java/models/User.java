@@ -5,10 +5,15 @@ import java.util.List;
 
 public class User {
     
-    private static List<User> all_users = new ArrayList<>();
+    public static ArrayList<User> all_users = new ArrayList<User>(){
+        {
+            add(new User("Admin","Admin","Admin","admin@admin","1234","00/00/00",true));
+        }
+    };
     
     private String type_user;
     private String name;
+    private String l_name;
     private String email;
     private String password;
     private String born_date;
@@ -17,21 +22,21 @@ public class User {
     private  List<Order> order = new ArrayList<Order>(){};
     private  List<Bill> bill = new ArrayList<Bill>(){};
     
-    public User(String type_user, String name, String email,String pass, String born_date, boolean status){
+    public User(String type_user, String name,String l_name, String email,String pass, String born_date, boolean status){
         this.type_user = type_user;
         this.name = name;
+        this.l_name = l_name;
         this.email = email;
         this.born_date = born_date;
         this.status = status;
         this.password = pass;
         
-        User.all_users.add(this);
         
     }
 
 
     public String getTypeUser(){
-        return type_user;
+        return this.type_user;
     }
     
     public void setTypeUser(String typeuser) {
@@ -40,15 +45,23 @@ public class User {
     }
     
     public String getName(){
-        return name;
+        return this.name;
     }
     
     public void setName(String name){
         this.name = name;
     }
     
+    public String getLName(){
+        return this.l_name;
+    }
+    
+    public void setLName(String name){
+        this.l_name = name;
+    }
+    
     public String getEmail() {
-        return email;
+        return this.email;
     }
     
     public void setEmail(String email){
@@ -56,7 +69,7 @@ public class User {
     }
     
     public String getPassword() {
-        return password;
+        return this.password;
     }
     
     public void setPassword(String password){
@@ -64,7 +77,7 @@ public class User {
     }
     
     public String getBornDate(){
-        return born_date;
+        return this.born_date;
     }
     
     public void setBornDate(String born){
@@ -72,7 +85,7 @@ public class User {
     }
     
     public boolean getStatus(){
-        return status;
+        return this.status;
     } 
     
     public void setStatus(boolean status){
@@ -80,7 +93,7 @@ public class User {
     }
     
     public List<Rating> getRating(){
-        return rating;
+        return this.rating;
     }
     
     public void setRating(List<Rating> rating){
@@ -88,7 +101,7 @@ public class User {
     }
     
     public List<Order> getOrder(){
-        return order;
+        return this.order;
     }
     
     public void setOrder(List<Order> order){
@@ -96,7 +109,7 @@ public class User {
     }
     
     public List<Bill> getBill(){
-        return bill;
+        return this.bill;
     }
     
     public void setBill(List<Bill> bill){
@@ -105,11 +118,20 @@ public class User {
     
     public static boolean existUser(String em,String pass){
         for(User us: User.all_users){
-            if(us.getPassword()==pass && us.getEmail()==em){
+            if(us.getPassword().equals(pass) && us.getEmail().equals(em)){
                 return true;
             }
         }return false;
     }
+    
+    public static User getUser(String em,String pass){
+        for(User us: User.all_users){
+            if(us.getPassword().equals(pass) && us.getEmail().equals(em)){
+                return us;
+            }
+        }return null;
+    }
 }   
 
 
+//xd

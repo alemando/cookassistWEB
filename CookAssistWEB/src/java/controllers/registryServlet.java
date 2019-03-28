@@ -40,12 +40,12 @@ public class registryServlet extends HttpServlet{
             throws ServletException, IOException {
         
         HttpSession session = request.getSession(); 
-        List<User> users = new ArrayList<User>();   
-        
+        ArrayList<User> users = User.all_users;   
+        /*
         if(null != session.getAttribute("email") && null != session.getAttribute("pass") && null != session.getAttribute("first-name") 
                 && null != session.getAttribute("last-name")){
             users=(ArrayList<User>) session.getAttribute("users");
-        }
+        }*/
         
         
         String first_name = request.getParameter("first-name");
@@ -53,9 +53,9 @@ public class registryServlet extends HttpServlet{
         String email = request.getParameter("email");
         String pass = request.getParameter("password");
         String date = request.getParameter("birthday");
-        User usuario = new User("normal",first_name+" "+last_name,email,pass,date,false);
+        User usuario = new User("normal",first_name,last_name,email,pass,date,false);
         
-        users.add(usuario);
+        User.all_users.add(usuario);
         
         session.setAttribute("Users", users);
         request.setAttribute("users", users);        

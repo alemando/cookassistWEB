@@ -56,3 +56,4 @@
     </table>
 </c:if>
 <%@ include file="footer.jsp" %>
+<%--xd--%>
