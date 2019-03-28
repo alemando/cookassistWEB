@@ -16,7 +16,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md fixed-top header_nav ">
-                <a class="navbar-brand" href="Index">
+                <a class="navbar-brand" href="./">
                     <img src="./img/CAlogo.png" width="199" height="44" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
