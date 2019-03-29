@@ -333,3 +333,30 @@ footer ul{
     color: #ffffff;
 
 }
+
+/*order*/
+#cabeza-order{
+    width:auto;
+    background: rgb(51,140,134);
+    height: 35px;
+    border-radius: 10px 10px 0px 0px;
+    padding-top:6px;
+    padding-left: 20px;
+    color: #ffffff;
+}
+#cuerpo-order{
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:20px;
+    border-radius: 0px 0px 10px 10px;
+}
+#cuadro-order{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid rgb(51,140,134);
+    border-top: 1px solid rgb(51,140,134);
+    border-left: 1px solid rgb(51,140,134);
+    border-right:  1px solid rgb(51,140,134);
+    width: auto;
+}

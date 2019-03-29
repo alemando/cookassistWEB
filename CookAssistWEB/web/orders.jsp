@@ -1,11 +1,12 @@
 <%@ include file="header.jsp" %>
-    <div id="cuadro-user">
-        <div id="cabeza-user">Pedido</div>
-        <div id="cuerpo-user">
+    <div id="cuadro-order">
+        <div id="cabeza-order">Pedido</div>
+        <div id="cuerpo-order">
             <form>
                 <div class="form-group row ">
                     <label for="user" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Usuario</label>
-                    <div class="col-xs-12 col-sm-6 col-md-10">
+                    <div class="col-xs-12 col-sm-6 col-md-10" >
+                        <td>${session_user.getName()}</td>
                     </div>
                 </div>    
                 <div class="form-group row ">
