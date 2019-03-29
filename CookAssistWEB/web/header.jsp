@@ -72,7 +72,7 @@
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="./login">Iniciar Sesión</a>
                                             <a class="dropdown-item" href="./registry">Registrarse</a>
-                                            <a class="dropdown-item" href="./Index">Ir al Inicio</a>
+                                            <a class="dropdown-item" href="./">Ir al Inicio</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Contactenos</a>
                                         </div>
