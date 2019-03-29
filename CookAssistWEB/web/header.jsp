@@ -16,7 +16,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md fixed-top header_nav ">
-                <a class="navbar-brand" href="Index">
+                <a class="navbar-brand" href="./">
                     <img src="./img/CAlogo.png" width="199" height="44" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
@@ -27,13 +27,13 @@
                         <c:choose>
                             <c:when test="${not loged}">
                                 <li class="li_nav nav-item active">
-                                    <a class="btn_nav btn nav-link" href="./Index"><i class="fas fa-home"></i> Inicio</a>
+                                    <a class="btn_nav btn nav-link" href="./"><i class="fas fa-home"></i> Inicio</a>
                                 </li>
                             </c:when>
                             <c:otherwise>
                                 
                                 <li class="li_nav nav-item active">
-                                    <a class="btn_nav btn nav-link" href="./Index"><i class="fas fa-home"></i> Inicio</a>
+                                    <a class="btn_nav btn nav-link" href="./"><i class="fas fa-home"></i> Inicio</a>
                                 </li>
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
