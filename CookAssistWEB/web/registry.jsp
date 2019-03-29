@@ -29,17 +29,18 @@
 
             <div id="boton-registro" class="form-group row">
                 <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">Registrarme</button>
+                    <button type="submit" class="btn btn-info">Registrarme</button>
                 </div>
             </div>
 
         </form>
+        
 
     </div>
 
     <c:if test = "${succes_registry eq 1}">
-        <div class="alert alert-success text-center" role="alert">
-            Registro Completado Correctamente
+        <div class="alert alert-success" role="alert">
+            Registro Completado. Ya puedes <a href="./login" class="alert-link">Iniciar Sesión</a>
         </div>
     </c:if>
     <c:if test = "${succes_registry eq 0}">
@@ -47,7 +48,7 @@
             Campos Incompletos
         </div>
     </c:if>
-    
+
 </div>
 
 

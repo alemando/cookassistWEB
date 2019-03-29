@@ -31,11 +31,7 @@
                                 </li>
                             </c:when>
                             <c:otherwise>
-                                <c:if test="${session_user.getStatus()}">
-                                    <li class="li_nav nav-item">
-                                        <a class="btn_nav btn nav-link" href="./users"><i class="fas fa-users-cog"></i> Usuarios</a>
-                                    </li>
-                                </c:if>
+                                
                                 <li class="li_nav nav-item active">
                                     <a class="btn_nav btn nav-link" href="./Index"><i class="fas fa-home"></i> Inicio</a>
                                 </li>
@@ -55,6 +51,11 @@
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./ratings"><i class="fas fa-star"></i> Calificaciones</a>
                                 </li>
+                                <c:if test="${session_user.getStatus()}">
+                                    <li class="li_nav nav-item">
+                                        <a class="btn_nav btn nav-link" href="./users"><i class="fas fa-users-cog"></i> Usuarios</a>
+                                    </li>
+                                </c:if>
                             </c:otherwise>
                         </c:choose>
 

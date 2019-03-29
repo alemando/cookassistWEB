@@ -1,37 +1,26 @@
 <%@ include file="header.jsp" %>
-<main>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="sidebar" class="col-md-2">
-                    <div id="nav_div">
-                        <h4>Utilities</h4>
-                        <ul class="link-list">
-                            <li>
-                                <a href="showproducts">Mostrar Productos</a>
-                            </li>
-                            <li>
-                                <a href="createproduct">Añadir Producto</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 5</a>
-                            </li>
-                        </ul>  
-                    </div>
-                </div>
-                <div class="col-md-10">
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quaerat quisquam quae voluptas repellat vitae veritatis temporibus nisi magnam eum molestias, distinctio laboriosam debitis officiis nam totam nesciunt quis?
-                    </div>
-                </div>
+<%--<div id="total-registro">
+    <div id="cabeza-registro">Todos los Productos</div>
+    <div id="cuerpo-registro">
+--%>
+<c:if test="${not empty Products}">
+    <c:forEach items="${Products}" var="pro">
+        <div class="card" style="width: 12rem;">
+            <img src="./img/pc.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${pro.getName()}</h5>
+                <p class="card-text">${pro.getDescription()}</p>
+                <p class="card-text">${pro.getUser()}</p>
+                <p class="card-text">${pro.getCode()}</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
             </div>
         </div>
-    </section>
-</main>
+
+
+
+    </c:forEach>
+</c:if>
+<%--
+</div>
+</div>--%>
 <%@ include file="footer.jsp" %>

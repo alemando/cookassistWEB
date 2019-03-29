@@ -23,12 +23,10 @@ public class Index extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {  
-            Product p1 = new Product("HP Laptop","asdasd","asdawqe","True");
-            Product p2 = new Product("HP Lapt00op","asdasd","asdawqe","True");
-            Product p3 = new Product("HP Lapt00o0p","asdasd","asdawqe","False");
-            HttpSession session = request.getSession(); 
+            
+            /*HttpSession session = request.getSession(); 
             session.setAttribute("products",p1);
-            request.setAttribute("products",p1);
+            request.setAttribute("products",p1);*/
             RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
             

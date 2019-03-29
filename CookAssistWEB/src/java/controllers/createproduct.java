@@ -22,8 +22,9 @@ public class createproduct extends HttpServlet {
         view.forward(request, response);        
     }
 
-    //protected void doPost(HttpServletReq  uest request, HttpServletResponse response)
-      //      throws ServletException, IOException {
-       // processRequest(request, response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        RequestDispatcher view = request.getRequestDispatcher("createproduct.jsp");
+        view.forward(request, response);
     }
-//}
+}

@@ -21,6 +21,7 @@ public class User {
     private  List<Rating> rating = new ArrayList<Rating>(){};
     private  List<Order> order = new ArrayList<Order>(){};
     private  List<Bill> bill = new ArrayList<Bill>(){};
+    private ArrayList<Product> products = new ArrayList<Product>(){};
     
     public User(String type_user, String name,String l_name, String email,String pass, String born_date, boolean status){
         this.type_user = type_user;
@@ -114,6 +115,14 @@ public class User {
     
     public void setBill(List<Bill> bill){
         this.bill = bill;
+    }
+    
+    public ArrayList<Product> getProduct(){
+        return this.products;
+    }
+    
+    public void setProduct(Product p){
+        this.products.add(p);
     }
     
     public static boolean existUser(String em,String pass){

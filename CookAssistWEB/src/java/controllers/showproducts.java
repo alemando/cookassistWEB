@@ -33,7 +33,8 @@ public class showproducts extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {  
         
-        HttpSession session = request.getSession();        
+        HttpSession session = request.getSession();    
+        /*
         List<Product> products = new ArrayList<>();
         
         if(null != session.getAttribute("Products")){
@@ -48,7 +49,7 @@ public class showproducts extends HttpServlet {
         products.add(p);
         
         session.setAttribute("Products", products);
-        request.setAttribute("products", products);        
+        request.setAttribute("products", products);   */     
         RequestDispatcher view = request.getRequestDispatcher("showproducts.jsp");
         view.forward(request, response);
     }

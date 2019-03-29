@@ -37,7 +37,9 @@ public class registryServlet extends HttpServlet {
         ArrayList<User> users = User.all_users;
 
         String first_name = request.getParameter("first-name");
+        first_name = first_name.substring(0,1).toUpperCase() + first_name.substring(1).toLowerCase();
         String last_name = request.getParameter("last-name");
+        last_name = last_name.substring(0,1).toUpperCase() + last_name.substring(1).toLowerCase();
         String email = request.getParameter("email");
         String pass = request.getParameter("pass");
         String date = request.getParameter("birthday");
