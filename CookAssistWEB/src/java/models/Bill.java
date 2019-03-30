@@ -1,51 +1,63 @@
 package models;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 public class Bill {
-    public int code;
-    public Date date;
-    public User user;
-    private  List<Order> order = new ArrayList<Order>(){};
 
+    public String code;
+    public String date;
+    public User user;
+
+    private static int auto_code = 0;
     
-    public Bill(int code, Date date, User user, List<Order> order){
-        this.code = code;
-        this.date = date;
+    private ArrayList<Order> order = new ArrayList<Order>() {
+    };
+
+    public Bill(User user,ArrayList<Order> order) {
+        this.setOrder(order);
+        this.setCode();
         this.user = user;
-        this.order = order;
+        this.setDate();
     }
-    
-    public int getCode(){
-        return code;
+
+    public String getCode() {
+        return this.code;
     }
-    
-    public void setCode(int code){
-        this.code = code; 
+
+    public void setCode() {
+        this.code = String.format("%06d", Bill.auto_code++);;
     }
-    
-    public Date getDate(){
-        return date;
+
+    public String getDate() {
+        return this.date;
     }
-    
-    public void setDate(Date date){
+
+    public void setDate() {
+        String pattern = "yyyy-MM-dd";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+        String date = simpleDateFormat.format(new Date());
+        System.out.println(date);
         this.date = date;
     }
-    
-    public User getUser(){
-        return user;
+
+    public User getUser() {
+        return this.user;
     }
-    
-    public void setUser(User user){
+
+    public void setUser(User user) {
         this.user = user;
     }
-    
-    public List<Order> getOrder(){
-        return order;
+
+    public List<Order> getOrder() {
+        return this.order;
     }
-    
-    public void setOrder(List<Order> order){
+
+    public void setOrder(ArrayList<Order> order) {
         this.order = order;
     }
 }

@@ -37,7 +37,7 @@
     </c:if>
     <c:if test = "${loged}">
         <script type="text/javascript">
-            window.location = "./";
+            window.location = "./Index";
         </script>
     </c:if>
     <div id = "cuadro-registro">
@@ -50,7 +50,7 @@
     <div id = "cuadro-registro">
         <div id ="cabeza-login">¿Problemas con el registro?</div>
         <div id="enlaces-registro" >
-            <a href="./">Contactenos aquí</a>
+            <a href="./Index">Contactenos aquí</a>
         </div>
 
     </div>

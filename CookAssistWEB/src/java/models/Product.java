@@ -5,7 +5,19 @@ import java.util.List;
 
 public class Product {
 
-    private static int auto_code = 1;
+    public static ArrayList<Product> products = new ArrayList<Product>() {
+        {
+            add(new Product("HP Laptop", "100 GB RAM", "Juan"));
+            add(new Product("Samsung Laptop", "Intel core iSupreme", "Manuel"));
+            add(new Product("MSI Laptop", "Itel Inside", "JuanitoGamer"));
+            add(new Product("MSI Laasdasdptop", "Itel Inside", "asdfad"));
+            add(new Product("MSI Laasdasdptop", "Itel Inside", "asdfad"));
+            add(new Product("MSI Laasdasdptop", "Itel Inside", "asdfad"));
+        }
+
+    };
+
+    private static int auto_code = 0;
     private String code;
     private String name;
     private String description;
@@ -13,22 +25,20 @@ public class Product {
     private List<OrderDetail> order_detail = new ArrayList<OrderDetail>() {
     };
 
-    public static ArrayList<Product> products = new ArrayList<Product>();
-
     public Product(String name, String description, String user) {
-        this.code = String.format("%06d", Product.auto_code++);
+        this.setCode();
         this.name = name;
         this.description = description;
         this.user = user;
-        Product.products.add(this);
+        //Product.products.add(this);
     }
 
     public String getCode() {
         return this.code;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setCode() {
+        this.code = String.format("%06d", Product.auto_code++);;
     }
 
     public String getName() {

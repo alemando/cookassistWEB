@@ -19,10 +19,6 @@ public class products extends HttpServlet {
 
         HttpSession session = request.getSession();
 
-        Product p1 = new Product("HP Laptop", "100 GB RAM", "Juan");
-        Product p2 = new Product("Samsung Laptop", "Intel core iSupreme", "Manuel");
-        Product p3 = new Product("MSI Laptop", "Itel Inside", "JuanitoGamer");
-
         session.setAttribute("Products", Product.products);
 
         RequestDispatcher view = request.getRequestDispatcher("products.jsp");

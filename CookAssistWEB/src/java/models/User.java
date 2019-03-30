@@ -7,11 +7,10 @@ public class User {
     
     public static ArrayList<User> all_users = new ArrayList<User>(){
         {
-            add(new User("Admin","Admin","Admin","admin@admin","1234","00/00/00",true));
+            add(new User("Admin","Admin","admin@admin","1234","00/00/00",true));
         }
     };
     
-    private String type_user;
     private String name;
     private String l_name;
     private String email;
@@ -23,8 +22,7 @@ public class User {
     private  List<Bill> bill = new ArrayList<Bill>(){};
     private ArrayList<Product> products = new ArrayList<Product>(){};
     
-    public User(String type_user, String name,String l_name, String email,String pass, String born_date, boolean status){
-        this.type_user = type_user;
+    public User(String name,String l_name, String email,String pass, String born_date, boolean status){
         this.name = name;
         this.l_name = l_name;
         this.email = email;
@@ -36,14 +34,7 @@ public class User {
     }
 
 
-    public String getTypeUser(){
-        return this.type_user;
-    }
-    
-    public void setTypeUser(String typeuser) {
-        this.type_user = typeuser;
-        
-    }
+
     
     public String getName(){
         return this.name;

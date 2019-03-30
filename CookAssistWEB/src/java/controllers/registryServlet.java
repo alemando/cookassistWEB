@@ -52,7 +52,7 @@ public class registryServlet extends HttpServlet {
 
             request.setAttribute("succes_registry", 1);
 
-            User usuario = new User("normal", first_name, last_name, email, pass, date, false);
+            User usuario = new User(first_name, last_name, email, pass, date, false);
 
             User.all_users.add(usuario);
 

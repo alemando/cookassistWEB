@@ -1,14 +1,16 @@
 <%@ include file="header.jsp" %>
-<div id="total-registro">
-    <div id="cabeza-registro">Todos los Productos</div>
-    <div id="cuerpo-registro">
-
+<div class="container">
+    <div  class="row">
         <c:if test="${not empty Products}">
+            
+            <div class="card-columns">
+                
             <c:forEach items="${Products}" var="pro">
-                <div class="card" style="width: 12rem;">
+                
+                <div class="card" style="width: 18rem;">
                     <img src="./img/pc.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">${pro.getName()}</h5>
+                        <h5 class="card- text-center">${pro.getName()}</h5>
                         <p class="card-text">${pro.getDescription()}</p>
                         <p class="card-text">${pro.getUser()}</p>
                         <p class="card-text">${pro.getCode()}</p>
@@ -16,11 +18,12 @@
                     </div>
                 </div>
 
-
+                
 
             </c:forEach>
+            </div>
         </c:if>
-
+        </div>
     </div>
-</div>
+    
 <%@ include file="footer.jsp" %>
