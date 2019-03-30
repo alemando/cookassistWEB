@@ -29,6 +29,9 @@
                                 <li class="li_nav nav-item active">
                                     <a class="btn_nav btn nav-link" href="./"><i class="fas fa-home"></i> Inicio</a>
                                 </li>
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
+                                </li>
                             </c:when>
                             <c:otherwise>
 
