@@ -71,20 +71,20 @@
                     --%>
                 </section>
                 <div class=" row gradient_in" >
-                    <div class="col-xs-12 col-sm-6 col-md-3 ">
+                    <div class="col-xs-12 col-sm-12 col-md-3 ">
                         <p>
                             <h3>Columna</h3>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est cupiditate beatae expedita eius quis rem facere, suscipit assumenda amet cumque quaerat accusantium quam minima, libero tempore exercitationem iure deserunt!
                         </p>
                     </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-6 ">
+                    <div class=" col-xs-12 col-sm-12 col-md-6 ">
                         <p>
                             <h3>Columna</h3>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est cupiditate beatae expedita eius quis rem facere, suscipit assumenda amet cumque quaerat accusantium quam minima, libero tempore exercitationem iure deserunt!
                         </p>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-3 ">
+                    <div class="col-xs-12 col-sm-12 col-md-3 ">
                         <p>
                             <h3>Columna</h3>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est cupiditate beatae expedita eius quis rem facere, suscipit assumenda amet cumque quaerat accusantium quam minima, libero tempore exercitationem iure deserunt!

@@ -1,34 +1,34 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-12 col-md-3">
                 <div>
-                    <h4>Get in touch with us</h4>
+                    <h4>¡Conoce un poco más sobre nosotros!</h4>
                     <h3>CookAssist</h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum dolor vel nisi nam debitis, atque id eveniet modi sapiente! Fuga ipsam a est obcaecati, nesciunt omnis doloribus deserunt adipisci?</p>
+                    <p>CooksAssist, nuestra aplicación, teien como propósito únicamente ofrecer la interfaz para que una persona, sea en su restaurante o negocio de comidas pueda ofreser todos sus productos, de una manera fácil y dinámica.</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-12 col-md-6" align="center">
                 <div>
                     <h4>Information</h4>
                     <ul class="link-list">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="./">Inicio</a>
                         </li>
                         <li>
-                            <a href="#">Terms And conditions</a>
+                            <a href="#">Terminos y condiciones</a>
                         </li>
                         <li>
-                            <a href="#">Privacy Policy</a>
+                            <a href="#">Política de privacidad</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#">Sobre nosotros</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="#">Trabaja con nosotros</a>
                         </li>
                         <li>
-                            <p href="#"> </p>
+                            <a href="#">Contacto</a>
                         </li>
                         <li>
                             <p href="#"> </p>
@@ -40,29 +40,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div>
-                    <h4>Pages</h4>
-                    <ul class="link-list">
-                        <li>
-                            <a href="#">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 4</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 5</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-12 col-md-3">
                 <div>
                     <h4>Newlestter</h4>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum dolor vel nisi nam debitis, atque id eveniet modi sapiente! Fuga ipsam a est obcaecati, nesciunt omnis doloribus deserunt adipisci?</p>
