@@ -7,12 +7,12 @@ public class Product {
 
     public static ArrayList<Product> products = new ArrayList<Product>() {
         {
-            add(new Product("HP Laptop", "100 GB RAM", "Juan"));
-            add(new Product("Samsung Laptop", "Intel core iSupreme", "Manuel"));
-            add(new Product("MSI Laptop", "Itel Inside", "JuanitoGamer"));
-            add(new Product("MSI Laasdasdptop", "Itel Inside", "asdfad"));
-            add(new Product("MSI Laasdasdptop", "Itel Inside", "asdfad"));
-            add(new Product("MSI Laasdasdptop", "Itel Inside", "asdfad"));
+            add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
+            add(new Product("Samsung Laptop", "Intel core iSupreme", 100, "Manuel"));
+            add(new Product("MSI Laptop", "Itel Inside",100, "JuanitoGamer"));
+            add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+            add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+            add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
         }
 
     };
@@ -21,15 +21,20 @@ public class Product {
     private String code;
     private String name;
     private String description;
-    private String user; //Mientras es String,luego es usuario
-    private List<OrderDetail> order_detail = new ArrayList<OrderDetail>() {
-    };
+    private int price;
+    //private String image;
+    //private String user; //Mientras es String,luego es usuario
+    private List<Rating> rating = new ArrayList<Rating>(){};
+    private List<Order> order = new ArrayList<Order>(){};
+    private String admin; //Mienttras es string (pruebas)
+    
 
-    public Product(String name, String description, String user) {
+    public Product(String name, String description, int price, String admin ) {
         this.setCode();
         this.name = name;
         this.description = description;
-        this.user = user;
+        this.price = price;
+        this.admin = admin;
         //Product.products.add(this);
     }
 
@@ -56,20 +61,36 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public List<OrderDetail> getOrder_detail() {
-        return order_detail;
+    
+    public int getPrice(){
+        return this.price;
+    }
+    
+    public void setPrice(int price){
+        this.price = price;
+    }
+    
+    public List<Rating> getRating() {
+        return this.rating;
     }
 
-    public void setOrder_detail(List<OrderDetail> order_detail) {
-        this.order_detail = order_detail;
+    public void setRating(List<Rating> rating) {
+        this.rating = rating;
     }
 
-    public String getUser() {
-        return this.user;
+    public List<Order> getOrder() {
+        return this.order;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setOrder(List<Order> order) {
+        this.order = order;
+    }
+
+    public String getAdmin() {
+        return this.admin;
+    }
+
+    public void setAdmin(String admin) {
+        this.admin = admin;
     }
 }

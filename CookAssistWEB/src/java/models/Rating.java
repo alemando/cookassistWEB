@@ -4,20 +4,20 @@ public class Rating {
     private int code;
     private int score;
     private String description;
-    private Order order;
+    private Product product;
     private User user;
-    private Chef chef;
     
-    public Rating(int code, int score, String description, Order order, User user){
+    
+    public Rating(int code, int score, String description, Product product, User user){
         this.code = code;
         this.score = score;
         this.description = description;
-        this.order = order;
+        this.product = product;
         this.user = user;
     }
     
     public int getCode(){
-        return code;
+        return this.code;
     }
     
     public void setCode(int code){
@@ -25,7 +25,7 @@ public class Rating {
     }
     
     public int getScore(){
-        return score;
+        return this.score;
     }
     
     public void setScore(int score){
@@ -33,37 +33,26 @@ public class Rating {
     }
     
     public String getDescription(){
-        return description;
+        return this.description;
     }
     
     public void setDescription(String description){
         this.description = description;
     }
     
-    public Order getOrder(){
-        return order;
+    public Product getProduct(){
+        return this.product;
     }
     
-    public void setOrder(Order order){
-        this.order = order;
+    public void setProduct(Product product){
+        this.product = product;
     }
     
     public User getUser(){
-        return user;
+        return this.user;
     }
     
     public void setUser(User user){
         this.user = user;
-    }
-    
-    public Chef getChef(){
-        return chef;
-    }
-    
-    public void setChef(Chef chef){
-        this.chef = chef;
-    }
-    
-    
-    
+    }    
 }
