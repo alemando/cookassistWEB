@@ -93,4 +93,13 @@ public class Product {
     public void setAdmin(String admin) {
         this.admin = admin;
     }
+    
+    public static Product getProductPerCode(String code){
+        for(Product p : Product.products){
+            if(code.equals(p.getCode())){
+                return p;
+            }
+        }return null;
+    }
+    
 }

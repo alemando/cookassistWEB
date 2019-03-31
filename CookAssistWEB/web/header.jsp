@@ -42,7 +42,7 @@
                                     <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
                                 </li>
                                 <li class="li_nav nav-item">
-                                    <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-utensils"></i> Pedidos</a>
+                                    <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-shopping-cart"></i> Mi Carrito</a>
                                 </li>
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./bills"><i class="fas fa-receipt"></i> Facturas</a>
@@ -93,7 +93,7 @@
                                         </button>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">Ver Perfil</a>
-                                            <a class="dropdown-item" href="#">Ver Pedidos</a>
+                                            <a class="dropdown-item" href="#">Ver Mi Carrito</a>
                                             <a class="dropdown-item" href="#">Otra cosa</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="./logout">Cerrar Sesión</a>

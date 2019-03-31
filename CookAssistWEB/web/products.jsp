@@ -1,29 +1,39 @@
 <%@ include file="header.jsp" %>
-<div class="container">
+<div id="total-producto">
     <div  class="row">
         <c:if test="${not empty Products}">
-            
-            <div class="card-columns">
-                
             <c:forEach items="${Products}" var="pro">
-                
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/pc.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card- text-center">${pro.getName()}</h5>
-                        <p class="card-text">${pro.getDescription()}</p>
-                        <p class="card-text">${pro.getUser()}</p>
-                        <p class="card-text">${pro.getCode()}</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
+                    <div class="card" style="width: auto;">
+                        <img src="./img/pc.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card- text-center">${pro.getName()}</h5>
+                            <p class="card-text">Descripción: ${pro.getDescription()}</p>
+                            <p class="card-text">Distribuidor: ${pro.getAdmin()}</p>
+                            <p class="card-text">ID: ${pro.getCode()}</p>
+                            <form method="GET" action="./createorder">
+                                <input type="hidden" name="code_order" value="${pro.getCode()}"/>
+                                <c:if test="${loged}">
+                                    <div class="text-center">
+                                    <button type="submit" class="btn btn-success"><i class="fas fa-cart-plus"></i> Añadir al Carrito: ${pro.getPrice()}$</button>
+                                    </div>
+                                </c:if>
+                                <c:if test="${not loged}">
+                                    <div class="text-center">
+                                        <button class="btn btn-danger" disabled><i class="fa fa-exclamation-circle"></i> Inicia sesión para poder comprar </button>
+                                    </div>
+                                </c:if>
+                                    
+                            </form>
+                        </div>
                     </div>
+
+
                 </div>
-
-                
-
             </c:forEach>
-            </div>
+
         </c:if>
-        </div>
     </div>
-    
+</div>
+
 <%@ include file="footer.jsp" %>

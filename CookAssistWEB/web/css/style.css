@@ -147,6 +147,19 @@ footer ul{
 .content{
     padding: 10px;
 }
+/*Productos*/
+
+#total-producto{
+    
+    background: white;
+    
+}
+
+#cuerpo-producto{
+    background-image: linear-gradient(to right,white, rgb(223,223,223),rgb(223,223,223),rgb(223,223,223), white);
+    margin-bottom: 2.5%;
+}
+
 
 /*Login*/
 @media screen and (max-width:640px){
@@ -155,7 +168,7 @@ footer ul{
         width:auto;
         margin-top: 80px;
         margin-bottom: 190px;
-
+        
     }
     #cuadro-login{
 
@@ -337,27 +350,27 @@ footer ul{
 
 /*order*/
 #cabeza-order{
-    width:auto;
+    width: auto;
     background: rgb(51,140,134);
-    height: 35px;
     border-radius: 10px 10px 0px 0px;
     padding-top:6px;
-    padding-left: 20px;
+    margin-bottom: 6px;
     color: #ffffff;
 }
 #cuerpo-order{
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top:20px;
     border-radius: 0px 0px 10px 10px;
+    background: black;
 }
 #cuadro-order{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    background: black;
     border-bottom: 1px solid rgb(51,140,134);
     border-top: 1px solid rgb(51,140,134);
     border-left: 1px solid rgb(51,140,134);
     border-right:  1px solid rgb(51,140,134);
+    border-radius: 10px;
     width: auto;
 }

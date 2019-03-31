@@ -8,6 +8,7 @@ public class User {
     public static ArrayList<User> all_users = new ArrayList<User>(){
         {
             add(new User("Admin","Admin","admin@admin","1234","00/00/00",true));
+            add(new User("Juan","Ciro","juan@gmail","1234","00/00/00",false));
         }
     };
     
@@ -17,9 +18,9 @@ public class User {
     private String password;
     private String born_date;
     private boolean status;
-    private  List<Rating> rating = new ArrayList<Rating>(){};
-    private  List<Order> order = new ArrayList<Order>(){};
-    private  List<Bill> bill = new ArrayList<Bill>(){};
+    private  ArrayList<Rating> rating = new ArrayList<Rating>(){};
+    private  ArrayList<Order> order = new ArrayList<Order>(){};
+    private  ArrayList<Bill> bill = new ArrayList<Bill>(){};
     
     public User(String name,String l_name, String email,String pass, String born_date, boolean status){
         this.name = name;
@@ -87,24 +88,24 @@ public class User {
         return this.rating;
     }
     
-    public void setRating(List<Rating> rating){
-        this.rating = rating;
+    public void setRating(Rating r){
+        this.rating.add(r);
     }
     
     public List<Order> getOrder(){
         return this.order;
     }
     
-    public void setOrder(List<Order> order){
-        this.order = order;
+    public void setOrder(Order order){
+        this.order.add(order);
     }
     
     public List<Bill> getBill(){
         return this.bill;
     }
     
-    public void setBill(List<Bill> bill){
-        this.bill = bill;
+    public void setBill(Bill bill){
+        this.bill.add(bill);
     }
     
     

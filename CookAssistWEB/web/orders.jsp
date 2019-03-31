@@ -1,38 +1,37 @@
 <%@ include file="header.jsp" %>
-    <div id="cuadro-order">
-        <div id="cabeza-order">Pedido</div>
-        <div id="cuerpo-order">
-            <form>
-                <div class="form-group row ">
-                    <label for="user" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Usuario</label>
-                    <div class="col-xs-12 col-sm-6 col-md-10" >
-                        <td>${session_user.getName()}</td>
+
+<div id="cuadro-order">
+    <div id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, estos son tus productos en carrito: </div>
+    <div id="cuerpo-order">
+
+        <div  class="row">
+            <c:if test="${not empty user_orders}">
+                <c:forEach items="${user_orders}" var="ord">
+                    <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
+                        <div class="card" style="width: auto;">
+                            <img src="./img/pc.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card- text-center">${ord.getProduct().getName()}</h5>
+                                <p class="card-text">Descripción: ${ord.getDescription()}</p>
+                                <p class="card-text">ID: ${ord.getCode()}#${ord.getUser().getName()}</p>
+                                <p class="card-text">Precio Total: ${ord.getPrice()}</p>
+                                <form method="GET" action="./createbill">
+                                    <input type="hidden" name="code_order" value="${ord.getCode()}"/>
+                                    
+                                    <button class="btn btn-success"><i class="fas fa-check"></i> Finalizar Compra</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+
                     </div>
-                </div>    
-                <div class="form-group row ">
-                    <label for="productos_disp" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Productos Disponibles</label>
-                    <div class="col-xs-12 col-sm-6 col-md-10">
-                        <select name="OS">
-                            <option selected value="0"> Elige una opción </option>
-                            <option value="1">Hamburguesa</option> 
-                            <option value="2">Fideos</option> 
-                            <option value="3">Arroz</option>
-                        </select>    
-                    </div>
-                </div>
-                <div class="form-group row ">
-                    <label for="description" class="col-xs-12 col-sm-6 col-md-2 col-form-label">Descripcion</label>
-                    <div class="col-xs-12 col-sm-6 col-md-10">
-                        <input type="text" class="form-control" id="pass" placeholder="Descripcion">
-                    </div>
-                </div>
-                <div class="form-group row ">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>    
+                </c:forEach>
+
+            </c:if>
+        </div>
+
     </div>    
+</div>    
 
 <%@ include file="footer.jsp" %>

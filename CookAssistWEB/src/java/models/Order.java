@@ -11,14 +11,15 @@ public class Order {
     private Product product;
     private User user;
     private Bill bill;
+    private int price;
     
-    public Order(int quantity, String description,Product product, User user, Bill bill){
+    public Order(int quantity, String description,Product product, User user){
         this.setCode();
+        this.setPrice(product,quantity);
         this.quantity= quantity;
         this.description = description;
         this.product = product;
         this.user = user;
-        this.bill = bill;
                 
     }
     
@@ -69,4 +70,13 @@ public class Order {
     public void setBill(Bill bill){
         this.bill = bill;
     }
+    
+    public int getPrice(){
+        return this.price;
+    }
+    
+    public void setPrice(Product p, int q){
+        this.price= p.getPrice()*q;
+    }
+   
 }
