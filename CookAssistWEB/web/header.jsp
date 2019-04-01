@@ -2,6 +2,8 @@
 <%@ page import="java.util.*" %>
 <%@ page session="true" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html lang='es'>
     <head>
@@ -42,7 +44,7 @@
                                     <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
                                 </li>
                                 <li class="li_nav nav-item">
-                                    <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-shopping-cart"></i> Mi Carrito</a>
+                                    <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-shopping-cart"></i> Mi Carrito <span class="badge badge-pill badge-danger">${fn:length(session_user.getOrder())}</span></a>
                                 </li>
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./bills"><i class="fas fa-receipt"></i> Facturas</a>

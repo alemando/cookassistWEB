@@ -1,49 +1,51 @@
+
 <footer>
-    <div class="container">
-        <div class="row">
+
+    <div class="container ">
+        <div class="row ">
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <div>
+                <div class="text-center">
                     <h4>¡Conoce un poco más sobre nosotros!</h4>
-                    <h3>CookAssist</h3>
-                    <p>CooksAssist, nuestra aplicación, teien como propósito únicamente ofrecer la interfaz para que una persona, sea en su restaurante o negocio de comidas pueda ofreser todos sus productos, de una manera fácil y dinámica.</p>
+                    <h3>¿Qué es CookAssist?</h3>
+                    <p>¡Un lugar donde encontraras comida por montones!, puedes echar un vistazo y antojarte de lo que quieras. Pero no lo olvides, queremos que consumas comida de calidad y por eso si tienes un inconveniente puedes contactarnos <a href="#" class="alert-link">aquí :)</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6" align="center">
                 <div>
                     <h4>Information</h4>
-                    <ul class="link-list">
+                    <ul class="link-list" >
                         <li>
-                            <a href="./">Inicio</a>
+                            <a style="color:white;" href="./">Inicio</a>
                         </li>
                         <li>
-                            <a href="#">Terminos y condiciones</a>
+                            <a style="color:white;" href="#">Terminos y condiciones</a>
                         </li>
                         <li>
-                            <a href="#">Política de privacidad</a>
+                            <a style="color:white;" href="#">Política de privacidad</a>
                         </li>
                         <li>
-                            <a href="#">Sobre nosotros</a>
+                            <a style="color:white;" href="#">Sobre nosotros</a>
                         </li>
                         <li>
-                            <a href="#">Trabaja con nosotros</a>
+                            <a style="color:white;" href="#">Trabaja con nosotros</a>
                         </li>
                         <li>
-                            <a href="#">Contacto</a>
+                            <a style="color:white;" href="#">Contacto</a>
                         </li>
                         <li>
-                            <p href="#"> </p>
+                            <p style="color:white;" href="#"> </p>
                         </li>
                         <li>
-                            <a href="./createproduct">Datos ficticios</a>
+                            <a style="color:white;" href="./createproduct">Datos ficticios</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
             <div class="col-sm-12 col-md-3">
-                <div>
-                    <h4>Newlestter</h4>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum dolor vel nisi nam debitis, atque id eveniet modi sapiente! Fuga ipsam a est obcaecati, nesciunt omnis doloribus deserunt adipisci?</p>
+                <div class="text-center" >
+                    <h4 >¡Nuevas Noticias!</h4>
+                    <p >  Estamos felices de decirte que vamos a lanzar nuestra aplicación al mundo entero!. <b>¡Mantente al tanto en nuestras redes sociales! :)</b>
                 </div>
             </div>
         </div>
@@ -53,7 +55,7 @@
                 <div class="copyright">
                     <p>&copy; CookAssist - All Rigths Reserved</p>
                     <div class="credits">
-                        Designed by Us
+                        Designed by Team 6
                     </div>
                 </div>
             </div>

@@ -18,14 +18,15 @@ public class logout extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
-
-        if (session.getAttribute("session_user") != null) {
+        
+        if (session.getAttribute("session_user") != null || (boolean) session.getAttribute("loged")) {
             session.setAttribute("loged", false);
             session.setAttribute("session_user", null);
         }
         else{
             response.sendRedirect("./Index");
         }
+        
         RequestDispatcher view = request.getRequestDispatcher("./Index");
         view.forward(request, response);
 
@@ -37,9 +38,11 @@ public class logout extends HttpServlet {
 
         HttpSession session = request.getSession();
 
+        
         RequestDispatcher view = request.getRequestDispatcher("./Index");
         view.forward(request, response);
 
+        
     }
 
 }
