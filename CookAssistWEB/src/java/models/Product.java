@@ -7,12 +7,12 @@ public class Product {
 
     public static ArrayList<Product> products = new ArrayList<Product>() {
         {
-            add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
-            add(new Product("Samsung Laptop", "Intel core iSupreme", 100, "Manuel"));
-            add(new Product("MSI Laptop", "Itel Inside",100, "JuanitoGamer"));
-            add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-            add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-            add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+            //add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
+            //add(new Product("Samsung Laptop", "Intel core iSupreme", 100, "Manuel"));
+            //add(new Product("MSI Laptop", "Itel Inside",100, "JuanitoGamer"));
+            //add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+            //add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+            //add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
         }
 
     };
@@ -35,7 +35,7 @@ public class Product {
         this.description = description;
         this.price = price;
         this.admin = admin;
-        //Product.products.add(this);
+        Product.products.add(this);
     }
 
     public String getCode() {
@@ -100,6 +100,15 @@ public class Product {
                 return p;
             }
         }return null;
+    }
+    public static void crearproductos(){
+    //Product.products.add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
+    //Product.products.add(new Product("Samsung Laptop", "Intel core iSupreme", 100, "Manuel"));
+    //Product.products.add(new Product("MSI Laptop", "Itel Inside",100, "JuanitoGamer"));
+    //Product.products.add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+    //Product.products.add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+    //Product.products.add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
+    Product p1 = new Product("HP Laptop", "100 GB RAM", 1999, "Juan");
     }
     
 }

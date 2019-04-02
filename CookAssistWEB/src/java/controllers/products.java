@@ -14,14 +14,16 @@ import models.User;
 
 @WebServlet(urlPatterns = {"/products"})
 public class products extends HttpServlet {
-
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        HttpSession session = request.getSession();
         
-             
+        HttpSession session = request.getSession();
+        if (session.getAttribute("Products")==null){
+            Product.crearproductos();
+        }
+          
         session.setAttribute("Products", Product.products);
         /*
         if((boolean)session.getAttribute("loged")){            

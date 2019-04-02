@@ -14,25 +14,25 @@
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="control-label col-sm-4" for="textinput">Line 1</label>
+                            <label class="control-label col-sm-4" for="textinput">Nombre del producto:</label>
                             <div class="col-sm-8">
-                                <input type="text" placeholder="Address Line 1" class="form-control">
+                                <input type="text" placeholder="Ingrese el nombre del producto" class="form-control">
                             </div>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="textinput">Line 2</label>
+                            <label class="col-sm-4 control-label" for="textinput">Descripción:</label>
                             <div class="col-sm-8">
-                                <input type="text" placeholder="Address Line 2" class="form-control">
+                                <input type="text" placeholder="Describa brevemente el producto" class="form-control">
                             </div>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="textinput">City</label>
+                            <label class="col-sm-4 control-label" for="textinput">Precio:</label>
                             <div class="col-sm-8">
-                                <input type="text" placeholder="City" class="form-control">
+                                <input type="text" placeholder="Ingrese el precio sin puntos ni comas, solo el numero" class="form-control">
                             </div>
                         </div>
 

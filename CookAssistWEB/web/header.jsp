@@ -34,6 +34,9 @@
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
                                 </li>
+                                <li class="li_nav nav-item">
+                                    <a class="btn_nav btn nav-link" href="./"><i class="fas fa-user-check"></i> Datos Ficticios</a>
+                                </li>
                             </c:when>
                             <c:otherwise>
 
@@ -51,7 +54,7 @@
                                 </li>
 
                                 <li class="li_nav nav-item">
-                                    <a class="btn_nav btn nav-link" href="./chefs"><i class="fas fa-user-check"></i> Chefs</a>
+                                    <a class="btn_nav btn nav-link" href="./"><i class="fas fa-user-check"></i> Datos Ficticios</a>
                                 </li>
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./ratings"><i class="fas fa-star"></i> Calificaciones</a>
