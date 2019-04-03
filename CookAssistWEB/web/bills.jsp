@@ -1,38 +1,40 @@
 <%@ include file="header.jsp" %>
-<main>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="sidebar" class="col-md-2">
-                    <div id="nav_div">
-                        <h4>Utilities</h4>
-                        <ul class="link-list">
-                            <li>
-                                <a href="#">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 5</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-10">
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quaerat quisquam quae voluptas repellat vitae veritatis temporibus nisi magnam eum molestias, distinctio laboriosam debitis officiis nam totam nesciunt quis?
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-    
+
+<div id="cuadro-order">
+    <h4 id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, estas son tus facturas: </h4>
+    <div id="cuerpo-order">
+
+        <div  class="row">
+            <c:if test="${not empty user_bills}">
+                <c:forEach items="${user_bills}" var="bill">
+                    <div id="cabeza-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
+                        <div class="card" style="width: auto;">
+                            <img src="./img/CAlogo.png" width="250" height="44" class="container" >
+                            <i class="text-center">Nit:12345678</i>
+                            <i class="text-center">Tel:654321</i>
+                            <p class="card- text container-fluid">Cliente: ${session_user.getName()}</p>
+                            <p class="card- text container-fluid">Codigo ${bill.getCode()}</p>
+                            <p class="card- text container-fluid">Fecha: ${bill.getDate()}</p>
+                            
+                            <div class="card-body">
+                                <h5 class="card_title">Detalles</h5>
+                                <div id="cuerpo-producto" class="">
+                                    <div class="card-text-center" style="width: auto;">
+                                        <div class="card-body">
+                                            <p class="card-text"> Producto: ${bill.getOrder().getProduct().getName()}</p>
+                                            <p class="card-text">Cantidad: ${bill.getOrder().getQuantity()}</p>
+                                            <p class="card-text">Precio Total: ${bill.getOrder().getPrice()}</p>
+                                            
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </c:forEach>
+                
+            </c:if>
+        </div>    
+
 <%@ include file="footer.jsp" %>
