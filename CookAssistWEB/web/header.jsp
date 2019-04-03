@@ -52,7 +52,7 @@
                                     <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-shopping-cart"></i> Mi Carrito <span class="badge badge-pill badge-danger">${fn:length(session_user.getOrder())}</span></a>
                                 </li>
                                 <li class="li_nav nav-item">
-                                    <a class="btn_nav btn nav-link" href="./bills"><i class="fas fa-receipt"></i> Facturas</a>
+                                    <a class="btn_nav btn nav-link" href="./bills"><i class="fas fa-receipt"></i> Facturas <span class="badge badge-pill badge-danger">${fn:length(session_user.getBill())}</span></a>
                                 </li>
                                 <c:if test="${not datos_f}">
                                     <li class="li_nav nav-item">

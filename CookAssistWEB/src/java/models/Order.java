@@ -11,7 +11,7 @@ public class Order {
     private String code;
     private int quantity;
     private String description;
-    private boolean finish;
+    private boolean finish = false;
     private Product product;
     private User user;
     private Bill bill;
@@ -24,7 +24,6 @@ public class Order {
         this.description = description;
         this.product = product;
         this.user = user;
-        this.setFinish(false);
         
                 
     }

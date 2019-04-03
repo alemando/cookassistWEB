@@ -5,7 +5,6 @@
             <c:forEach items="${Products}" var="pro">
                 <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
                     <div class="card" style="width: auto;">
-                        <img src="./img/pc.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card- text-center">${pro.getName()}</h5>
                             <p class="card-text">Descripción: ${pro.getDescription()}</p>

@@ -125,14 +125,13 @@ public class User {
         }return null;
     }
     
-    /*public static void delOrder(Order order){
-        String code_o = order.getCode();
-        for(Order o : User.order){
-            if(o.getCode()==code_o){
-                
+    public Order getOrderPerCode(String code){
+        for(Order o : this.getOrder()){
+            if(code.equals(o.getCode())){
+                return o;
             }
-        }
-    }*/
+        }return null;
+    }
 }   
 
 

@@ -23,38 +23,38 @@ import models.User;
  * @author MIS DOCUMENTOS
  */
 @WebServlet(name = "createBill", urlPatterns = {"/createBill"})
-public class createBill extends HttpServlet{
+public class createBill extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        
-        
+        RequestDispatcher view = request.getRequestDispatcher("createBill.jsp");
+        view.forward(request, response);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        HttpSession session = request.getSession();
-        String co = request.getParameter("code_order");
-        
-        User user = (User) session.getAttribute("session_user");
-    
-        
-        
-        Order o = Order.getOrderPerCode(co);
-        
-        Bill actual_bill = new Bill(user, o);
-        System.out.println(actual_bill);
-        user.setBill(actual_bill);
-        o.setFinish(true);
-        
-        RequestDispatcher view = request.getRequestDispatcher("createBill.jsp");
-           view.forward(request, response);
-        
 
+        HttpSession session = request.getSession();
         
+        String code = request.getParameter("code_order_2");
+
+        User user = (User) session.getAttribute("session_user");
+
+        Order order = user.getOrderPerCode(code);
+
+        order.setFinish(true);
+
+        Bill actual_bill = new Bill(user, order);
+
+        user.setBill(actual_bill);
+
+        RequestDispatcher view = request.getRequestDispatcher("createBill.jsp");
+        view.forward(request, response);
+
     }
 
 }

@@ -7,7 +7,15 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang='es'>
+    <script LANGUAGE="JavaScript">
+        function redireccionar(page)
+        {
+            location.href = page
+        }
+
+    </script>
     <head>
+
         <meta charset="utf-8">
         <title>CookAssist</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +35,7 @@
             <button onclick='return redireccionar("./bills");' class="btn btn-success btn-lg"><i class="fas fa-cart-plus"></i>  Ir a Tus Facturas</button>
             <button onclick='return redireccionar("./products");' class="btn btn-info btn-lg"><i class="fas fa-shopping-cart"></i>  Ir a Comprar</button> 
             <button onclick='return redireccionar("./orders");' class="btn btn-info btn-lg"><i class="fas fa-shopping-cart"></i>  Ir a Tu Carrito </button> 
-             
+
         </div>
 
 
