@@ -15,7 +15,7 @@
                                 <p class="card-text">Descripción: ${ord.getDescription()}</p>
                                 <p class="card-text">ID: ${ord.getCode()}#${ord.getUser().getName()}</p>
                                 <p class="card-text">Precio Total: ${ord.getPrice()}</p>
-                                <form method="GET" action="./createbill">
+                                <form method="POST" action="./createBill">
                                     <input type="hidden" name="code_order" value="${ord.getCode()}"/>
                                     
                                     <button class="btn btn-success"><i class="fas fa-check"></i> Finalizar Compra</button>

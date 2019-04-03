@@ -1,13 +1,17 @@
 package models;
 
+import java.util.ArrayList;
 
 
 
 public class Order {
+    
+    public static ArrayList<Order> orders = new ArrayList<Order>() {};
     private static int auto_code = 0;
     private String code;
     private int quantity;
-    private String description; 
+    private String description;
+    private boolean finish;
     private Product product;
     private User user;
     private Bill bill;
@@ -20,6 +24,7 @@ public class Order {
         this.description = description;
         this.product = product;
         this.user = user;
+        this.setFinish(false);
                 
     }
     
@@ -77,6 +82,22 @@ public class Order {
     
     public void setPrice(Product p, int q){
         this.price= p.getPrice()*q;
+    }
+    
+    public static Order getOrderPerCode(String code){
+        for(Order o : Order.orders){
+            if(code.equals(o.getCode())){
+                return o;
+            }
+        }return null;
+    }
+    
+    public boolean getFinish(){
+        return this.finish;
+    }
+    
+    public void setFinish(boolean finish){
+        this.finish = finish;
     }
    
 }

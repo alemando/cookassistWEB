@@ -13,11 +13,10 @@ public class Bill {
 
     private static int auto_code = 0;
     
-    private ArrayList<Order> order = new ArrayList<Order>() {
-    };
+    private Order order;
 
-    public Bill(User user,ArrayList<Order> order) {
-        this.setOrder(order);
+    public Bill(User user,Order order) {
+        this.order = order;
         this.setCode();
         this.user = user;
         this.setDate();
@@ -52,11 +51,11 @@ public class Bill {
         this.user = user;
     }
 
-    public List<Order> getOrder() {
+    public Order getOrder() {
         return this.order;
     }
 
-    public void setOrder(ArrayList<Order> order) {
+    public void setOrder(Order order) {
         this.order = order;
     }
 }
