@@ -34,7 +34,7 @@ public class User {
     }
 
 
-
+    
     
     public String getName(){
         return this.name;
@@ -100,7 +100,7 @@ public class User {
         this.order.add(order);
     }
     
-    public List<Bill> getBill(){
+    public ArrayList<Bill> getBill(){
         return this.bill;
     }
     

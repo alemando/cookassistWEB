@@ -12,18 +12,20 @@ import javax.servlet.http.HttpSession;
 import models.Product;
 import models.User;
 
-@WebServlet(urlPatterns = {"/products"})
-public class products extends HttpServlet {
-    
+@WebServlet(urlPatterns = {"/datosFicticios"})
+public class datosFicticios extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         HttpSession session = request.getSession();
         
-        session.setAttribute("Products", Product.products);
-          
-        
+        session.setAttribute("datos_f", true);
+
+        Product.crearProductos();
+
+
         /*
         if((boolean)session.getAttribute("loged")){            
             User u = (User) session.getAttribute("session_user");
@@ -33,9 +35,8 @@ public class products extends HttpServlet {
             }
             session.setAttribute("main_orders",u.getOrder());
         }
-        */
-
-        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
+         */
+        RequestDispatcher view = request.getRequestDispatcher("./Index");
         view.forward(request, response);
     }
 
@@ -43,9 +44,7 @@ public class products extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        request.setAttribute("Products", Product.products);
-
-        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("./Index");
         view.forward(request, response);
     }
 

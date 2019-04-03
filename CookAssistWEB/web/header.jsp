@@ -34,9 +34,11 @@
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
                                 </li>
-                                <li class="li_nav nav-item">
-                                    <a class="btn_nav btn nav-link" href="./"><i class="fas fa-user-check"></i> Datos Ficticios</a>
-                                </li>
+                                <c:if test="${not datos_f}">
+                                    <li class="li_nav nav-item">
+                                        <a class="btn_nav btn nav-link" href="./datosFicticios"><i class="fas fa-user-check"></i> Datos Ficticios</a>
+                                    </li>
+                                </c:if>
                             </c:when>
                             <c:otherwise>
 
@@ -52,10 +54,11 @@
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./bills"><i class="fas fa-receipt"></i> Facturas</a>
                                 </li>
-
-                                <li class="li_nav nav-item">
-                                    <a class="btn_nav btn nav-link" href="./"><i class="fas fa-user-check"></i> Datos Ficticios</a>
-                                </li>
+                                <c:if test="${not datos_f}">
+                                    <li class="li_nav nav-item">
+                                        <a class="btn_nav btn nav-link" href="./datosFicticios"><i class="fas fa-key"></i> Datos Ficticios</a>
+                                    </li>
+                                </c:if>
                                 <li class="li_nav nav-item">
                                     <a class="btn_nav btn nav-link" href="./ratings"><i class="fas fa-star"></i> Calificaciones</a>
                                 </li>
@@ -97,7 +100,7 @@
                                             <td>${session_user.getName()}</td>
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Ver Perfil</a>
+                                            <a class="dropdown-item" href="configUser.jsp">Configurar Perfil</a>
                                             <a class="dropdown-item" href="#">Ver Mi Carrito</a>
                                             <a class="dropdown-item" href="#">Otra cosa</a>
                                             <div class="dropdown-divider"></div>

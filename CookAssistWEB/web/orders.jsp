@@ -17,9 +17,7 @@
                                 <p class="card-text">Precio Total: ${ord.getPrice()}</p>
                                 <form method="POST" action="./createBill">
                                     <input type="hidden" name="code_order" value="${ord.getCode()}"/>
-                                    
                                     <button class="btn btn-success"><i class="fas fa-check"></i> Finalizar Compra</button>
-
                                 </form>
                             </div>
                         </div>

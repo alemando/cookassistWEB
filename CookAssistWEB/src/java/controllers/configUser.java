@@ -12,40 +12,30 @@ import javax.servlet.http.HttpSession;
 import models.Product;
 import models.User;
 
-@WebServlet(urlPatterns = {"/products"})
-public class products extends HttpServlet {
-    
+@WebServlet(urlPatterns = {"/configUser"})
+public class configUser extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        HttpSession session = request.getSession();
-        
-        session.setAttribute("Products", Product.products);
-          
-        
-        /*
-        if((boolean)session.getAttribute("loged")){            
-            User u = (User) session.getAttribute("session_user");
-            if(request.getAttribute("order") != null){
-                Product prod = (Product) request.getAttribute("order");
-                //u.setOrder
-            }
-            session.setAttribute("main_orders",u.getOrder());
-        }
-        */
 
-        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
+        
+        
+        
+
+        RequestDispatcher view = request.getRequestDispatcher("configUser.jsp");
         view.forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        request.setAttribute("Products", Product.products);
-
-        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
+        
+        HttpSession session = request.getSession();
+        
+        
+        
+        RequestDispatcher view = request.getRequestDispatcher("configUser.jsp");
         view.forward(request, response);
     }
 
