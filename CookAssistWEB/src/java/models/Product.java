@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
-
+    public static ArrayList<Product> Coincidencias = new ArrayList<Product>();
     public static ArrayList<Product> products = new ArrayList<Product>() {
         {
             //add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
@@ -17,7 +17,7 @@ public class Product {
 
     };
 
-    private static int auto_code = 0;
+    private static int auto_code = 1;
     private String code;
     private String name;
     private String description;
@@ -97,21 +97,33 @@ public class Product {
 
     public static Product getProductPerCode(String code) {
         for (Product p : Product.products) {
-            if (code.equals(p.getCode())) {
+            if (p.code.equals(p.getCode())) {
                 return p;
+            }
+        }
+        return null;
+    }
+    public static Product getProductobyname(String x){
+        
+        if ((Product.products).size()>0){
+            for (Product p: Product.products){
+                if ((x.equalsIgnoreCase(p.getName()))){
+                    Product.Coincidencias.add(p);
+                }
             }
         }
         return null;
     }
 
     public static void crearProductos() {
-        Product p1 = new Product("HP Laptop", "100 GB RAM", 2000, "Admin");
-        Product p2 = new Product("Samsung Laptop", "Intel core iSupreme", 100, "Admin");
-        Product p3 =new Product("MSI Laptop", "Itel Inside", 300, "Admin");
-        Product p4 =new Product("MSI Laasdasdptop", "Itel Inside", 1500, "Admin");
-        Product p5 =new Product("MSI Laasdasdptop", "Itel Inside", 350, "Admin");
-        Product p6 =new Product("MSI Laasdasdptop", "Itel Inside", 1200, "Admin");
-        Product p7 =new Product("HP Laptop", "100 GB RAM", 10, "AdminBejeta");
+        Product p1 = new Product("Salchipapas", "Salchipapas Pequeñas con un huevo de codorniz", 2000, "Admin");
+        Product p2 = new Product("Salchipapas", "Salchipapas Medianas con un huevo de codorniz", 4000, "Admin");
+        Product p3 = new Product("Salchipapas", "Salchipapas Grandes con 2 huevos de codorniz", 6000, "Admin");
+        Product p4 = new Product("Salchipapa Especial", "Salchipapas grandes con queso gratinado y 3 huevos de codorniz", 7500, "Admin");
+        Product p5 = new Product("Perro Caliente", "Perro pequeño con queso", 3500, "Admin");
+        Product p6 = new Product("Pero Caliente Grande", "Perro grande con queso", 5000, "Admin");
+        Product p7 = new Product("Perro Caliente", "Perro pequeño con queso y tocineta", 4500, "Admin");
+        Product p8 = new Product("Pero Caliente Grande", "Perro grande con queso y  tocineta", 6000, "Admin");
+        Product p9 = new Product("HP Laptop", "100 GB RAM", 10, "AdminBejeta");
     }
-
 }

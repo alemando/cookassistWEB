@@ -55,9 +55,9 @@
                     <p class="lead">
                     <div class="btn-group" role="group" aria-label="Basic example">
 
-                        <a class="btn btn-info btn-lg" href="#" role="button">Registrarse</a>
-                        <a class="btn btn-info btn-lg" href="#" role="button">Iniciar sesión</a>
-                        <a class="btn btn-info btn-lg" href="#" role="button">¡Ver productos disponibles!</a>
+                        <a class="btn btn-info btn-lg" href="./registry" role="button">Registrarse</a>
+                        <a class="btn btn-info btn-lg" href="./login" role="button">Iniciar sesión</a>
+                        <a class="btn btn-info btn-lg" href="./products" role="button">¡Ver productos disponibles!</a>
 
 
                     </div>
