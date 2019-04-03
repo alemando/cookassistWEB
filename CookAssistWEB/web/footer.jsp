@@ -27,16 +27,13 @@
                             <a style="color:white;" href="#">Sobre nosotros</a>
                         </li>
                         <li>
-                            <a style="color:white;" href="#">Trabaja con nosotros</a>
+                            <a style="color:white;" href="http://www.xvideos.com">Trabaja con nosotros</a>
                         </li>
                         <li>
                             <a style="color:white;" href="#">Contacto</a>
                         </li>
                         <li>
                             <p style="color:white;" href="#"> </p>
-                        </li>
-                        <li>
-                            <a style="color:white;" href="./createproduct">Datos ficticios</a>
                         </li>
 
                     </ul>

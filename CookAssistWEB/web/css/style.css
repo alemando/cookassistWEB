@@ -395,7 +395,6 @@ footer ul{
         padding-right: 20px;
         padding-top:20px;
         border-radius: 0px 0px 10px 10px;
-
     }
     #cuadro-order{
         width:auto;
@@ -412,6 +411,34 @@ footer ul{
 }
 
 
+@media screen and (max-width:10000px) and (min-width:300px){
+    #cuadro-total-config-user{
+        background: white;
+        width: 80%;
+        border: 1px solid rgb(51,140,134);
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+    #cuadro-config-user{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #cuadro-selectores{
+       
+    }
+    
+}
+@media screen and (max-width:510px){
+    #cuadro-total-config-user{
+        background: white;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
 
-
-
+}

@@ -24,9 +24,12 @@ public class Index extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {  
             
-            /*HttpSession session = request.getSession(); 
-            session.setAttribute("products",p1);
+            HttpSession session = request.getSession(); 
+            /*session.setAttribute("products",p1);
             request.setAttribute("products",p1);*/
+            
+            
+            
             RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
             
@@ -37,6 +40,7 @@ public class Index extends HttpServlet {
             throws ServletException, IOException {        
             HttpSession session = request.getSession(); 
             session.setAttribute("loged",false);
+            session.setAttribute("datos_f", false);
             RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
     }

@@ -24,12 +24,13 @@ public class Product {
     private int price;
     //private String image;
     //private String user; //Mientras es String,luego es usuario
-    private List<Rating> rating = new ArrayList<Rating>(){};
-    private List<Order> order = new ArrayList<Order>(){};
+    private List<Rating> rating = new ArrayList<Rating>() {
+    };
+    private List<Order> order = new ArrayList<Order>() {
+    };
     private String admin; //Mienttras es string (pruebas)
-    
 
-    public Product(String name, String description, int price, String admin ) {
+    public Product(String name, String description, int price, String admin) {
         this.setCode();
         this.name = name;
         this.description = description;
@@ -61,15 +62,15 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
-    
-    public int getPrice(){
+
+    public int getPrice() {
         return this.price;
     }
-    
-    public void setPrice(int price){
+
+    public void setPrice(int price) {
         this.price = price;
     }
-    
+
     public List<Rating> getRating() {
         return this.rating;
     }
@@ -93,22 +94,24 @@ public class Product {
     public void setAdmin(String admin) {
         this.admin = admin;
     }
-    
-    public static Product getProductPerCode(String code){
-        for(Product p : Product.products){
-            if(code.equals(p.getCode())){
+
+    public static Product getProductPerCode(String code) {
+        for (Product p : Product.products) {
+            if (code.equals(p.getCode())) {
                 return p;
             }
-        }return null;
+        }
+        return null;
     }
-    public static void crearproductos(){
-    //Product.products.add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
-    //Product.products.add(new Product("Samsung Laptop", "Intel core iSupreme", 100, "Manuel"));
-    //Product.products.add(new Product("MSI Laptop", "Itel Inside",100, "JuanitoGamer"));
-    //Product.products.add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-    //Product.products.add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-    //Product.products.add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-    Product p1 = new Product("HP Laptop", "100 GB RAM", 1999, "Juan");
+
+    public static void crearProductos() {
+        Product p1 = new Product("HP Laptop", "100 GB RAM", 2000, "Admin");
+        Product p2 = new Product("Samsung Laptop", "Intel core iSupreme", 100, "Admin");
+        Product p3 =new Product("MSI Laptop", "Itel Inside", 300, "Admin");
+        Product p4 =new Product("MSI Laasdasdptop", "Itel Inside", 1500, "Admin");
+        Product p5 =new Product("MSI Laasdasdptop", "Itel Inside", 350, "Admin");
+        Product p6 =new Product("MSI Laasdasdptop", "Itel Inside", 1200, "Admin");
+        Product p7 =new Product("HP Laptop", "100 GB RAM", 10, "AdminBejeta");
     }
-    
+
 }

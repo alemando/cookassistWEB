@@ -20,11 +20,12 @@ public class Order {
         this.description = description;
         this.product = product;
         this.user = user;
+        
                 
     }
     
     public String getCode(){
-        return code;
+        return this.code;
     }
     
      public void setCode() {
