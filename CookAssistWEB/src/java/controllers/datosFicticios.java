@@ -22,9 +22,9 @@ public class datosFicticios extends HttpServlet {
         HttpSession session = request.getSession();
         
         session.setAttribute("datos_f", true);
-
+        if ((Product.products).size()==0){
         Product.crearProductos();
-
+        }
 
         /*
         if((boolean)session.getAttribute("loged")){            

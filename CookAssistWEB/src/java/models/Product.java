@@ -124,6 +124,36 @@ public class Product {
         Product p6 = new Product("Pero Caliente Grande", "Perro grande con queso", 5000, "Admin");
         Product p7 = new Product("Perro Caliente", "Perro pequeño con queso y tocineta", 4500, "Admin");
         Product p8 = new Product("Pero Caliente Grande", "Perro grande con queso y  tocineta", 6000, "Admin");
-        Product p9 = new Product("HP Laptop", "100 GB RAM", 10, "AdminBejeta");
+        Product p9 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p10 = new Product("Hamburguesa", "Hamburguesa con queso y tocineta", 7000, "Admin");
+        Product p11 = new Product("Perra", "Perra pequeña con queso", 5000, "Admin");
+        Product p12 = new Product("Hamburguesa", "Hamburguesa con doble carne queso y tocineta", 10000, "Admin");
+        Product p13 = new Product("Perra Especial", "Perra grande con queso", 7000, "Admin");
+        Product p14 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p15 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p16 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p17 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p18 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p19 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p20 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p21 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p22 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p23 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p24 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p25 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p26 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p27 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p28 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p29 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p30 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p31 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p32 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p33 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p34 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p35 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        Product p36 = new Product("Hamburguesa", "Hamburguesa Sencilla con queso", 6000, "Admin");
+        
+        
+        
     }
 }
