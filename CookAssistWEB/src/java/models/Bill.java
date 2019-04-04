@@ -9,6 +9,7 @@ public class Bill {
 
     public String code;
     public String date;
+    public boolean cancelled = false;
     public User user;
 
     private static int auto_code = 1;
@@ -57,5 +58,13 @@ public class Bill {
 
     public void setOrder(Order order) {
         this.order = order;
+    }
+    
+    public boolean getCancelled(){
+        return this.cancelled;    
+    }
+    
+    public void setCancelled(boolean cancelled){
+        this.cancelled = cancelled;
     }
 }

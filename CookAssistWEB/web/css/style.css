@@ -151,14 +151,14 @@ footer ul{
 
 #total-producto{
 
-    background: white;
+    background: white ;
 
 }
 
 #cuerpo-producto{
     background-image: linear-gradient(to right,white, rgb(223,223,223),rgb(223,223,223),rgb(223,223,223), white);
     margin-bottom: 2.5%;
-    margin-top: 2.5%;
+    margin-top: auto;
 }
 
 
@@ -442,4 +442,7 @@ footer ul{
         margin-bottom: 200px;
     }
 
+}
+#move-item-nav{
+    margin-right: 30px;
 }

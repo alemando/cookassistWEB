@@ -35,23 +35,21 @@ public class registryServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
         ArrayList<User> users = User.all_users;
-
+        request.setAttribute("succes_registry", 1);
         String first_name = request.getParameter("first-name");
-        first_name = first_name.substring(0,1).toUpperCase() + first_name.substring(1).toLowerCase();
         String last_name = request.getParameter("last-name");
-        last_name = last_name.substring(0,1).toUpperCase() + last_name.substring(1).toLowerCase();
         String email = request.getParameter("email");
         String pass = request.getParameter("pass");
         String date = request.getParameter("birthday");
-
-        if (first_name.equals("") || last_name.equals("") | email.equals("") || pass.equals("") || date.equals("")){
+        if (first_name.equals("") || last_name.equals("") | email.equals("") || pass.equals("") || date.equals("")) {
 
             request.setAttribute("succes_registry", 0);
 
-        }else {
+        } else {
 
             request.setAttribute("succes_registry", 1);
-
+            first_name = first_name.substring(0, 1).toUpperCase() + first_name.substring(1).toLowerCase();
+            last_name = last_name.substring(0, 1).toUpperCase() + last_name.substring(1).toLowerCase();
             User usuario = new User(first_name, last_name, email, pass, date, false);
 
             User.all_users.add(usuario);

@@ -1,38 +1,30 @@
 <%@ include file="header.jsp" %>
-<main>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="sidebar" class="col-md-2">
-                    <div id="nav_div">
-                        <h4>Utilities</h4>
-                        <ul class="link-list">
-                            <li>
-                                <a href="#">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 5</a>
-                            </li>
-                        </ul>
+<div id="cuadro-order">
+    <h4 id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, estas son tus Calificaciones: </h4>
+    <div id="cuerpo-order">
+        <c:if test="${not empty user_rating}">
+            <c:forEach items="${user_rating}" var="rates">
+                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3" style="margin-top: 2.5%;margin-left: 2.5%;margin-right: 2.5%;">
+                    <div class="card" style="width: auto;">
+                        <div class="card-body">
+                            <h5 class="card- text-center">${rates.getProduct().getName()}</h5>
+                            <p> </p>
+                            <h4 class="card-text">Tu Calificación: ${rates.getScore()} puntos</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-10">
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quaerat quisquam quae voluptas repellat vitae veritatis temporibus nisi magnam eum molestias, distinctio laboriosam debitis officiis nam totam nesciunt quis?
-                    </div>
-                </div>
+            </c:forEach>
+        </c:if>
+
+
+        <c:if test="${empty user_rating}">
+            <div class="text-center">
+                <img style="margin-top: 2.5%" src="./img/error.png" width="256" height="256" >
             </div>
-        </div>
-    </section>
-</main>
-    
+            <h1 style="margin-bottom: 5%;text-align:  center;">¡Vaya, no tienes Calificaciones!</h1>
+        </c:if>
+
+</div>
+</div>
+
 <%@ include file="footer.jsp" %>
