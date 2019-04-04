@@ -1,38 +1,24 @@
 <%@ include file="header.jsp" %>
-<main>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="sidebar" class="col-md-2">
-                    <div id="nav_div">
-                        <h4>Utilities</h4>
-                        <ul class="link-list">
-                            <li>
-                                <a href="#">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 5</a>
-                            </li>
-                        </ul>
+<div id="total-producto" >
+    <div  class="row" >
+        <c:if test="${not empty user_rating}">
+            <c:forEach items="${user_rating}" var="rates">
+                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3" style="margin-top: 2.5%;margin-left: 2.5%;margin-right: 2.5%;">
+                    <div class="card" style="width: auto;">
+                        <div class="card-body">
+                            <h5 class="card- text-center">${rates.getProduct().getName()}</h5>
+                            <p> </p>
+                            <h4 class="card-text">Tu Calificación: ${rates.getScore()} puntos</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-10">
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quaerat quisquam quae voluptas repellat vitae veritatis temporibus nisi magnam eum molestias, distinctio laboriosam debitis officiis nam totam nesciunt quis?
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-    
+            </c:forEach>
+        </c:if>
+
+    </div>
+</div>
+<c:if test="${empty user_rating}">
+    <h1 style="margin-top: 100px;margin-bottom: 300px;text-align:  center;">¡Vaya, no tienes Calificaciones aun!</h1>
+</c:if>
+
 <%@ include file="footer.jsp" %>

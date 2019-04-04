@@ -66,8 +66,8 @@ public class Product {
         return this.rating;
     }
 
-    public void setRating(List<Rating> rating) {
-        this.rating = rating;
+    public void setRating(Rating rating) {
+        this.rating.add(rating);
     }
 
     public List<Order> getOrder() {

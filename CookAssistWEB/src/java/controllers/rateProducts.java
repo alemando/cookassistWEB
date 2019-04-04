@@ -11,52 +11,38 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import models.Product;
 import models.User;
+import models.Rating;
 
-@WebServlet(urlPatterns = {"/createorder"})
-public class createorder extends HttpServlet {
+@WebServlet(urlPatterns = {"/rateProducts"})
+public class rateProducts extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        
         HttpSession session = request.getSession();
-        
-        
-        String code = (String) request.getParameter("code_order");
-        
-        Product prod = Product.getProductPerCode(code);
-        
-        if(prod != null){
-            
-            session.setAttribute("product_code",prod);
-            
-        }
-        
-        
-        
-        /*if((boolean)session.getAttribute("loged")){            
-            User u = (User) session.getAttribute("session_user");
-            
-            
-            
-            
-            session.setAttribute("main_orders",u.getOrder());
-        }*/
-        
 
-        RequestDispatcher view = request.getRequestDispatcher("createorder.jsp");
+        User user = (User) session.getAttribute("session_user");
+        String rate = request.getParameter("calification");
+        String code = request.getParameter("code_prod");
+
+        Product prod = Product.getProductPerCode(code);
+        if (!rate.equals("0")) {
+            Rating rating = new Rating(rate, prod, user);
+
+            prod.setRating(rating);
+            user.setRating(rating);
+        }
+        session.setAttribute("user_rating",user.getRating());
+        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
         view.forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
-        
 
-        RequestDispatcher view = request.getRequestDispatcher("createorder.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("products.jsp");
         view.forward(request, response);
     }
 
