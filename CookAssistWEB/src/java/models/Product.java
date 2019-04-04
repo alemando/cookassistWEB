@@ -97,7 +97,7 @@ public class Product {
 
     public static Product getProductPerCode(String code) {
         for (Product p : Product.products) {
-            if (p.code.equals(p.getCode())) {
+            if (code.equals(p.getCode())) {
                 return p;
             }
         }

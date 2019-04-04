@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Order {
     
     public static ArrayList<Order> orders = new ArrayList<Order>() {};
-    private static int auto_code = 0;
+    private static int auto_code = 1;
     private String code;
     private int quantity;
     private String description;

@@ -11,7 +11,7 @@ public class Bill {
     public String date;
     public User user;
 
-    private static int auto_code = 0;
+    private static int auto_code = 1;
     
     private Order order;
 
