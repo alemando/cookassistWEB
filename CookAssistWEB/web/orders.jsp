@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <%@ include file="header.jsp" %>
 
 <div id="cuadro-order">
@@ -82,4 +82,3 @@
 
 
 <%@ include file="footer.jsp" %>
->>>>>>> 1b60e4bf8a145c4fa73414fadb98f3a4d892f597
