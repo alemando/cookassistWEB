@@ -1,4 +1,5 @@
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <footer>
 
     <div class="container ">
@@ -12,7 +13,7 @@
             </div>
             <div class="col-sm-12 col-md-6" align="center">
                 <div>
-                    <h4>Information</h4>
+                    <h4>Información</h4>
                     <ul class="link-list" >
                         <li>
                             <a style="color:white;" href="./">Inicio</a>
@@ -42,7 +43,7 @@
             <div class="col-sm-12 col-md-3">
                 <div class="text-center" >
                     <h4 >¡Nuevas Noticias!</h4>
-                    <p >  Estamos felices de decirte que vamos a lanzar nuestra aplicación al mundo entero!. <b>¡Mantente al tanto en nuestras redes sociales! :)</b>
+                    <p >  Estamos felices de decirte que vamos a lanzar nuestro sitio web al mundo entero!. <b>¡Mantente al tanto en nuestras redes sociales! :)</b>
                 </div>
             </div>
         </div>
@@ -72,6 +73,13 @@
 
         </div>
     </div>
+    <c:if test="${loged}">
+        <c:if test="${empty session_user}">
+            <script type="text/javascript">
+                window.location = "./logout";
+            </script>
+        </c:if>
+    </c:if>
 </footer>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>

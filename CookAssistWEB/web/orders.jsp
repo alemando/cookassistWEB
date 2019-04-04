@@ -10,9 +10,9 @@
                     <c:if test="${not ord.getFinish()}">
                         <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
                             <div class="card" style="width: auto;">
-                                <img src="./img/pc.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card- text-center">${ord.getProduct().getName()}</h5>
+                                    <p> </p>
                                     <p class="card-text">Descripción: ${ord.getDescription()}</p>
                                     <p class="card-text">ID: ${ord.getCode()}#${ord.getUser().getName()}</p>
                                     <p class="card-text">Precio Total: ${ord.getPrice()}</p>

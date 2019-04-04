@@ -17,7 +17,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-md fixed-top header_nav ">
+            <nav class="navbar navbar-expand-lg fixed-top header_nav ">
                 <a class="navbar-brand" href="./">
                     <img src="./img/CAlogo.png" width="199" height="44" alt="">
                 </a>
@@ -75,8 +75,8 @@
                         <c:when test="${not loged}">
                             <ul class="navbar-nav ml-auto">
                                 <li class="li_nav nav-item">
-                                    <div class="btn-group btn_nav btn nav-link">
-                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="btn-group btn_nav btn nav-link background-navbar">
+                                        <button type="button" class="btn btn-info dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-user"></i>
                                             Iniciar Sesión
                                         </button>
@@ -94,13 +94,13 @@
                         <c:otherwise>
                             <ul class="navbar-nav ml-auto">
                                 <li class="li_nav nav-item">
-                                    <div class="btn-group btn_nav btn nav-link">
-                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="btn-group btn_nav btn nav-link background-navbar">
+                                        <button type="button" class="btn btn-info dropdown-toggle move-item-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-user"></i>
                                             <td>${session_user.getName()}</td>
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="configUser.jsp">Configurar Perfil</a>
+                                            <a class="dropdown-item" href="./configUser">Configurar Perfil</a>
                                             <a class="dropdown-item" href="#">Ver Mi Carrito</a>
                                             <a class="dropdown-item" href="#">Otra cosa</a>
                                             <div class="dropdown-divider"></div>

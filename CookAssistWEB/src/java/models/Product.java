@@ -5,17 +5,8 @@ import java.util.List;
 
 public class Product {
     public static ArrayList<Product> Coincidencias = new ArrayList<Product>();
-    public static ArrayList<Product> products = new ArrayList<Product>() {
-        {
-            //add(new Product("HP Laptop", "100 GB RAM", 1999, "Juan"));
-            //add(new Product("Samsung Laptop", "Intel core iSupreme", 100, "Manuel"));
-            //add(new Product("MSI Laptop", "Itel Inside",100, "JuanitoGamer"));
-            //add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-            //add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-            //add(new Product("MSI Laasdasdptop", "Itel Inside", 1000, "asdfad"));
-        }
+    public static ArrayList<Product> products = new ArrayList<Product>();
 
-    };
 
     private static int auto_code = 1;
     private String code;

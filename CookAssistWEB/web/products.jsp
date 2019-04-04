@@ -7,6 +7,7 @@
                     <div class="card" style="width: auto;">
                         <div class="card-body">
                             <h5 class="card- text-center">${pro.getName()}</h5>
+                            <p> </p>
                             <p class="card-text">Descripción: ${pro.getDescription()}</p>
                             <p class="card-text">Distribuidor: ${pro.getAdmin()}</p>
                             <p class="card-text">ID: ${pro.getCode()}</p>
