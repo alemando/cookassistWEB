@@ -1,6 +1,7 @@
 <%@ include file="header.jsp" %>
-<div id="total-producto" >
-    <div  class="row" >
+<div id="cuadro-order">
+    <h4 id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, estas son tus Calificaciones: </h4>
+    <div id="cuerpo-order">
         <c:if test="${not empty user_rating}">
             <c:forEach items="${user_rating}" var="rates">
                 <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3" style="margin-top: 2.5%;margin-left: 2.5%;margin-right: 2.5%;">
@@ -15,10 +16,15 @@
             </c:forEach>
         </c:if>
 
-    </div>
+
+        <c:if test="${empty user_rating}">
+            <div class="text-center">
+                <img style="margin-top: 2.5%" src="./img/error.png" width="256" height="256" >
+            </div>
+            <h1 style="margin-bottom: 5%;text-align:  center;">¡Vaya, no tienes Calificaciones!</h1>
+        </c:if>
+
 </div>
-<c:if test="${empty user_rating}">
-    <h1 style="margin-top: 100px;margin-bottom: 300px;text-align:  center;">¡Vaya, no tienes Calificaciones aun!</h1>
-</c:if>
+</div>
 
 <%@ include file="footer.jsp" %>

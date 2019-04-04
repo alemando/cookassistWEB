@@ -27,11 +27,17 @@
                         </div>
                     </c:if>
                 </c:forEach>
-                
+
             </c:if>
         </div>
-        
+        <c:if test="${empty user_orders}">
+            <div class="text-center">
+                <img style="margin-top: 2.5%" src="./img/error.png" width="256" height="256" >
+            </div>
+            <h1 style="margin-bottom: 5%;text-align:  center;">¡Vaya, no tienes Pedidos!</h1>
+        </c:if> 
     </div>    
-</div>    
+</div>
+
 
 <%@ include file="footer.jsp" %>
