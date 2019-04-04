@@ -84,7 +84,7 @@ public class User {
         this.status = status;
     }
     
-    public List<Rating> getRating(){
+    public ArrayList<Rating> getRating(){
         return this.rating;
     }
     
@@ -92,7 +92,7 @@ public class User {
         this.rating.add(r);
     }
     
-    public List<Order> getOrder(){
+    public ArrayList<Order> getOrder(){
         return this.order;
     }
     

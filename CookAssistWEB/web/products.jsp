@@ -3,11 +3,12 @@
     <div  class="row">
         <c:if test="${not empty Products}">
             <c:forEach items="${Products}" var="pro">
-                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
+                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3" style="margin-top: 0.01%;">
                     <div class="card" style="width: auto;">
-                        <div class="card-body">
+                        <div class="card-header" style="background: rgba(51,140,134,0.3);">
                             <h5 class="card- text-center">${pro.getName()}</h5>
-                            <p> </p>
+                        </div>
+                        <div class="card-body">
                             <p class="card-text">Descripción: ${pro.getDescription()}</p>
                             <p class="card-text">Distribuidor: ${pro.getAdmin()}</p>
                             <p class="card-text">ID: ${pro.getCode()}</p>
@@ -34,9 +35,9 @@
                                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">¿Quieres dar una Calificacion a este Producto?</label>
                                         <select class="custom-select my-1 mr-sm-2" name="calification">
                                             <option value="0" selected>Sin Calificación</option>
-                                            <option value="1">Malo</option>
-                                            <option value="2">Bueno</option>
-                                            <option value="3">Excelente</option>
+                                            <option value="1">1 Estrella - Malo</option>
+                                            <option value="2">2 Estrellas - Bueno</option>
+                                            <option value="3">3 Estrellas - Excelente</option>
                                         </select>
                                         <p> </p>
                                         <input type="hidden" name="code_prod" value="${pro.getCode()}">

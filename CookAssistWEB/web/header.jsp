@@ -33,11 +33,11 @@
                                         <a class="btn_nav btn nav-link" href="./"><i class="fas fa-home"></i> Inicio</a>
                                     </li>
                                     <li class="li_nav nav-item">
-                                        <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
+                                        <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-utensils"></i> ¡Ir a Comprar!</a>
                                     </li>
                                     <c:if test="${not datos_f}">
                                         <li class="li_nav nav-item">
-                                            <a class="btn_nav btn nav-link" href="./datosFicticios"><i class="fas fa-user-check"></i> Datos Ficticios</a>
+                                            <a class="btn_nav btn nav-link" href="./datosFicticios"><i class="fas fa-cube"></i> Datos Ficticios</a>
                                         </li>
                                     </c:if>
                                 </c:when>
@@ -47,7 +47,7 @@
                                         <a class="btn_nav btn nav-link" href="./"><i class="fas fa-home"></i> Inicio</a>
                                     </li>
                                     <li class="li_nav nav-item">
-                                        <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-box-open"></i> Productos</a>
+                                        <a class="btn_nav btn nav-link" href="./products"><i class="fas fa-utensils"></i> ¡Ir a Comprar!</a>
                                     </li>
                                     <li class="li_nav nav-item">
                                         <a class="btn_nav btn nav-link" href="./orders"><i class="fas fa-shopping-cart"></i> Mi Carrito <span class="badge badge-pill badge-danger">${fn:length(session_user.getOrder())}</span></a>
@@ -57,7 +57,7 @@
                                     </li>
                                     <c:if test="${not datos_f}">
                                         <li class="li_nav nav-item">
-                                            <a class="btn_nav btn nav-link" href="./datosFicticios"><i class="fas fa-key"></i> Datos Ficticios</a>
+                                            <a class="btn_nav btn nav-link" href="./datosFicticios"><i class="fas fa-cube"></i> Datos Ficticios</a>
                                         </li>
                                     </c:if>
                                     <li class="li_nav nav-item">
@@ -104,8 +104,7 @@
                                         </button>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="./configUser">Configurar Perfil</a>
-                                            <a class="dropdown-item" href="#">Ver Mi Carrito</a>
-                                            <a class="dropdown-item" href="#">Otra cosa</a>
+                                            <a class="dropdown-item" href="./orders">Ver Mi Carrito</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="./logout">Cerrar Sesión</a>
                                             <div class="dropdown-divider"></div>
