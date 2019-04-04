@@ -132,7 +132,16 @@ public class User {
             }
         }return null;
     }
+    
+    public Bill getBillPerCode(String code){
+        for(Bill b : this.getBill()){
+            if(code.equals(b.getCode())){
+                return b;
+            }
+        }return null;
+    }
 }   
+
 
 
 //xd
