@@ -105,6 +105,7 @@
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="./configUser">Configurar Perfil</a>
                                             <a class="dropdown-item" href="./orders">Ver Mi Carrito</a>
+                                            <a class="dropdown-item" href="./billsPaid">Facturas pagas</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="./logout">Cerrar Sesión</a>
                                             <div class="dropdown-divider"></div>
