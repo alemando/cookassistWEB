@@ -47,11 +47,13 @@ public class createBill extends HttpServlet {
         Order order = user.getOrderPerCode(code);
 
         order.setFinish(true);
-
+        
         Bill actual_bill = new Bill(user, order);
 
         user.setBill(actual_bill);
 
+        user.delOrderPerCode(code);
+        
         RequestDispatcher view = request.getRequestDispatcher("createBill.jsp");
         view.forward(request, response);
 

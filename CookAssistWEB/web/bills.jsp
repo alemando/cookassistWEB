@@ -21,7 +21,7 @@
                                     <div id="cuerpo-producto" class="">
                                         <div class="card-text-center" style="width: auto;">
                                             <div class="card-body">
-                                                <p class="card-text"> Producto: ${bill.getOrder().getProduct().getName()}</p>
+                                                <p class="card-text">Producto: ${bill.getOrder().getProduct().getName()}</p>
                                                 <p class="card-text">Cantidad: ${bill.getOrder().getQuantity()}</p>
                                                 <p class="card-text">Precio Total: ${bill.getOrder().getPrice()}</p>                                    
                                             </div>    
@@ -40,7 +40,7 @@
             </c:if>
 
         </div> 
-        <c:if test="${empty user_bills}">
+        <c:if test="${empty session_user.getBill()}">
             <div class="text-center">
                 <img style="margin-top: 2.5%" src="./img/error.png" width="256" height="256" >
             </div>

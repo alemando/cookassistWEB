@@ -24,7 +24,7 @@
             <div class="text-center">
                 <img style="margin-top: 2.5%" src="./img/error.png" width="256" height="256" >
             </div>
-            <h1 style="margin-bottom: 5%;text-align:  center;">ï¿½Vaya, no tienes Calificaciones!</h1>
+            <h1 style="margin-bottom: 5%;text-align:  center;">¿Vaya, no tienes Calificaciones!</h1>
         </c:if>
 
 </div>

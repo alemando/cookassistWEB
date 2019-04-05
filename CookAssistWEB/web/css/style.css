@@ -445,3 +445,7 @@ footer ul{
 #move-item-nav{
     margin-right: 30px;
 }
+
+.card{
+    height: 100;
+}

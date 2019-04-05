@@ -3,8 +3,8 @@
     <div  class="row">
         <c:if test="${not empty Products}">
             <c:forEach items="${Products}" var="pro">
-                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3" style="margin-top: 0.01%;">
-                    <div class="card" style="width: auto;">
+                <div id="cuerpo-producto" class="col-md-4 col-xs-12 col-sm-6 col-xl-3">
+                    <div class="card" style="width: auto; height: 100%;">
                         <div class="card-header" style="background: rgba(51,140,134,0.3);">
                             <h5 class="card- text-center">${pro.getName()}</h5>
                         </div>
