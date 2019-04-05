@@ -12,7 +12,7 @@
                             <p></p>
                             <p class="card-text-center">${rates.getProduct().getDescription()}</p>
                             <p> </p>
-                            <h6 class="card-text">Tu Calificaciï¿½n: ${rates.getScore()} puntos</h6>
+                            <h6 class="card-text">Tu Calificación: ${rates.getScore()} puntos</h6>
                         </div>
                     </div>
                 </div>
