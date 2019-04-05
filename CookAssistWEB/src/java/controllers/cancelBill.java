@@ -42,8 +42,13 @@ public class cancelBill extends HttpServlet {
         String code = request.getParameter("code_bill");
 
         User user = (User) session.getAttribute("session_user");
+        
+        Bill bill = user.getBillPerCode(code);
+        bill.setCancelled(true);
 
-        user.delBillPerCode(code);
+        
+        
+        
 
         RequestDispatcher view = request.getRequestDispatcher("cancelBill.jsp");
         view.forward(request, response);

@@ -1,7 +1,7 @@
 <%@ include file="header.jsp" %>
 
 <div id="cuadro-order">
-    <h4 id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, estas son tus facturas: </h4>
+    <h4 id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, estas son tus facturas pagadas: </h4>
     <div id="cuerpo-order">
 
         <div  class="row">
