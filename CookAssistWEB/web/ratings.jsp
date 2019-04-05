@@ -1,3 +1,4 @@
+
 <%@ include file="header.jsp" %>
 <div id="cuadro-order">
     <h4 id="cabeza-order" class="text-center">Hola! ${session_user.getName()}, este es tu historial de Calificaciones: </h4>
@@ -11,7 +12,7 @@
                             <p></p>
                             <p class="card-text-center">${rates.getProduct().getDescription()}</p>
                             <p> </p>
-                            <h6 class="card-text">Tu Calificación: ${rates.getScore()} puntos</h6>
+                            <h6 class="card-text">Tu Calificaciï¿½n: ${rates.getScore()} puntos</h6>
                         </div>
                     </div>
                 </div>
@@ -23,7 +24,7 @@
             <div class="text-center">
                 <img style="margin-top: 2.5%" src="./img/error.png" width="256" height="256" >
             </div>
-            <h1 style="margin-bottom: 5%;text-align:  center;">¡Vaya, no tienes Calificaciones!</h1>
+            <h1 style="margin-bottom: 5%;text-align:  center;">ï¿½Vaya, no tienes Calificaciones!</h1>
         </c:if>
 
 </div>

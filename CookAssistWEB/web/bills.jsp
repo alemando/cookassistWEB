@@ -30,7 +30,7 @@
                                 </div>
                                 <form method="POST" action="./cancelBill">
                                     <input type="hidden" name="code_bill" value="${bill.getCode()}"/>
-                                    <button class="btn btn-success container"><i class="fas fa-check"></i> Cancelar</button>
+                                    <button class="btn btn-success container"><i class="fas fa-check"></i> Finalizar compra total</button>
                                 </form>            
                             </div>
                         </div>

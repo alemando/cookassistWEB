@@ -1,57 +1,28 @@
 <%@ include file="header.jsp" %>
-<main>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="sidebar" class="col-md-2">
-                    <div id="nav_div">
-                        <h4>Utilities</h4>
-                        <ul class="link-list">
-                            <li>
-                                <a href="#">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Link 5</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-10">
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quaerat quisquam quae voluptas repellat vitae veritatis temporibus nisi magnam eum molestias, distinctio laboriosam debitis officiis nam totam nesciunt quis?
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <c:if test="${not empty Users}">
-        <table class="tg">
-            <tr>
-                <th width="80">Nombre</th>
-                <th width="120">Correo</th>
-                <th width="120">Pass</th>
-                <th width="120">Fecha</th>
-
-            </tr>
-            <c:forEach items="${Users}" var="pro">
-                <tr>
-                    <td>${pro.getName()}</td>
-                    <td>${pro.getEmail()}</td>
-                    <td>${pro.getPassword()}</td>
-                    <td>${pro.getBornDate()}</td>
+<div id="cuadro-order" style="text-align: center;margin-left: 5%;margin-right: 5%;">
+    <h4 id="cabeza-order" class="text-center">Estos son los usuarios actualmente: </h4>
+    <div style="margin-bottom: 10px;" class="table-responsive table-striped" >
+        <c:if test="${not empty admin_users}">
+            <table class="tg">
+                <tr >
+                    <th width="20%">Nombre</th>
+                    <th width="20%">Correo</th>
+                    <th width="15%">Contraseña</th>
+                    <th width="10%">Fecha de Nacimiento</th>
+                    <th width="15%">Estado de cuenta</th>
                 </tr>
-            </c:forEach>
-        </table>
-    </c:if>
-</main>
-
+                
+                <c:forEach items="${admin_users}" var="pro">
+                    <tr>
+                        <td>${pro.getName()}</td>
+                        <td>${pro.getEmail()}</td>
+                        <td>${pro.getPassword()}</td>
+                        <td>${pro.getBornDate()}</td>
+                        <td><c:if test="${pro.getStatus()}">Administrador</c:if><c:if test="${not pro.getStatus()}">Corriente</c:if></td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </c:if>
+    </div>
+</div>
 <%@ include file="footer.jsp" %>
