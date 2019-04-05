@@ -8,27 +8,35 @@
                         <li data-target="#carousel_1" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel_1" data-slide-to="1"></li>
                         <li data-target="#carousel_1" data-slide-to="2"></li>
+                        <li data-target="#carousel_1" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img src="./img/img_slider_2.png" width="500" height="200" class="img-responsive" alt="">
                             <div class="carousel-caption">
                                 <h3>Cook Assist</h3>
-                                <p class="p1">El indicado para tus noches sin dormir</p>
+                                <p class="p1">La mejor comida para todo momento</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./img/img_slider_1.png" width="700" height="400" class="img-responsive" alt="">
                             <div class="carousel-caption">
-                                <h3>Disfruta</h3>
-                                <p class="p1">Tapa tus venas con nuestra deliciosa comida</p>
+                                <h3>Cook Assist</h3>
+                                <p class="p1">La mejor comida para todo momento</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./img/img_slider_3.png" width="700" height="400" class="img-responsive" alt="">
                             <div class="carousel-caption">
-                                <h3>Jummmm</h3>
-                                <p class="p1">Papa para engordar</p>
+                                <h3>Cook Assist</h3>
+                                <p class="p1">La mejor comida para todo momento</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/imagen3.jpg" width="500" height="200" class="img-responsive" alt="">
+                            <div class="carousel-caption">
+                                <h3>Cook Assist</h3>
+                                <p class="p1">La mejor comida para todo momento</p>
                             </div>
                         </div>
                     </div>
