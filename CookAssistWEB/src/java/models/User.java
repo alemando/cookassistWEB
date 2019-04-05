@@ -1,5 +1,10 @@
 package models;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,14 +31,14 @@ public class User {
     private ArrayList<Bill> bill = new ArrayList<Bill>() {
     };
 
-    public User(String name, String l_name, String email, String pass, String born_date, boolean status) {
+    public User(String name, String l_name, String email, String pass, String born_date, boolean status){
         this.name = name;
         this.l_name = l_name;
         this.email = email;
         this.born_date = born_date;
         this.status = status;
         this.password = pass;
-
+        
     }
 
     public String getName() {
