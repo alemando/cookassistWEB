@@ -34,8 +34,8 @@
         <div class="text-center">
             <button onclick='return redireccionar("./bills");' class="btn btn-success btn-lg"><i class="fas fa-cart-plus"></i>  Ir a Tus Facturas</button>
             <button onclick='return redireccionar("./products");' class="btn btn-info btn-lg"><i class="fas fa-shopping-cart"></i>  Ir a Comprar</button> 
-            <button onclick='return redireccionar("./orders");' class="btn btn-info btn-lg"><i class="fas fa-shopping-cart"></i>  Ir a Tu Carrito </button> 
-
+            <button onclick='return redireccionar("./orders");' class="btn btn-info btn-lg"><i class="fas fa-shopping-cart"></i>  Volver a Tu Carrito </button> 
+            <button onclick='return redireccionar("./");' class="btn btn-info btn-lg"><i class="fas fa-home"></i>  Volver al inicio </button> 
         </div>
 
 
