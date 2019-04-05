@@ -11,24 +11,24 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="./img/img_slider_2.png" width="700" height="400" class="img-responsive" alt="">
+                            <img src="./img/img_slider_2.png" width="500" height="200" class="img-responsive" alt="">
                             <div class="carousel-caption">
-                                <h3>Slide 1</h3>
-                                <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea earum, dolorem nesciunt repellendus odit aperiam, necessitatibus commodi accusantium architecto consectetur ab, quo laudantium? Consectetur rerum autem hic assumenda velit exercitationem.</p>
+                                <h3>Cook Assist</h3>
+                                <p class="p1">El indicado para tus noches sin dormir</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./img/img_slider_1.png" width="700" height="400" class="img-responsive" alt="">
                             <div class="carousel-caption">
-                                <h3>Slide 2</h3>
-                                <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea earum, dolorem nesciunt repellendus odit aperiam, necessitatibus commodi accusantium architecto consectetur ab, quo laudantium? Consectetur rerum autem hic assumenda velit exercitationem.</p>
+                                <h3>Disfruta</h3>
+                                <p class="p1">Tapa tus venas con nuestra deliciosa comida</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./img/img_slider_3.png" width="700" height="400" class="img-responsive" alt="">
                             <div class="carousel-caption">
-                                <h3>Slide 3</h3>
-                                <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea earum, dolorem nesciunt repellendus odit aperiam, necessitatibus commodi accusantium architecto consectetur ab, quo laudantium? Consectetur rerum autem hic assumenda velit exercitationem.</p>
+                                <h3>Jummmm</h3>
+                                <p class="p1">Papa para engordar</p>
                             </div>
                         </div>
                     </div>
