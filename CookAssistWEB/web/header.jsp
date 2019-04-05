@@ -89,6 +89,7 @@
                                             <a class="dropdown-item" href="./">Ir al Inicio</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Contactenos</a>
+                                            <a class="dropdown-item" href="./txtdates">Datos desde TXT</a>
                                         </div>
                                     </div>
                                 </li>
@@ -110,6 +111,7 @@
                                             <a class="dropdown-item" href="./logout">Cerrar Sesión</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Contactenos</a>
+                                            <a class="dropdown-item" href="./txtdates">Datos desde TXT</a>
                                             <c:if test="${session_user.getStatus()}">
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="./createproduct">Agregar Productos</a>

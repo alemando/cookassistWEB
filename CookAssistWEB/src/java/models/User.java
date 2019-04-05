@@ -31,7 +31,7 @@ public class User {
     private ArrayList<Bill> bill = new ArrayList<Bill>() {
     };
 
-    public User(String name, String l_name, String email, String pass, String born_date, boolean status){
+    public User(String name, String l_name, String email, String pass, String born_date, boolean status) {
         this.name = name;
         this.l_name = l_name;
         this.email = email;
