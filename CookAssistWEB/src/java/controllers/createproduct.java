@@ -52,7 +52,7 @@ public class createproduct extends HttpServlet {
             
             Product producto = new Product(prod_name,prod_desc,prod_price,"Admin");
             
-            Product.products.add(producto);
+            
         }
         
         session.setAttribute("Product", products);
